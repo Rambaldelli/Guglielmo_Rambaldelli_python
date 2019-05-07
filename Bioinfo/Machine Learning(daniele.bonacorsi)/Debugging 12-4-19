@@ -1,0 +1,5 @@
+DEBUGGING
+HIGH VARIANCE: more data, less features, increase lambda
+HIGH BIAS: more feature, more polynomial feature, decrease lambda
+
+

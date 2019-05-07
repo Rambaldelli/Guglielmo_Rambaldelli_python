@@ -1,0 +1,39 @@
+SERIES(sum over K)
+-Areithmetic
+-sum of squares
+-sum of cubes
+-geometric
+-logK
+-K^p
+
+SETS
+-subset
+-operation
+-law
+	distributive
+	de morgan 
+	ecc.
+-power set: the set that contain all the possible subset of the original set.
+-cartesian product (AxB)
+
+RELATIONS (is a subset of the cartisian product between two set)
+[B.N.: fuction is a specific case of relation]
+-proprieties
+	-reflexive
+	-symmetric
+	-transitive
+	-antisymmetric
+-order
+	-partial
+	-total
+
+FUNCTIONS
+f:A->B : function from domain A to codomain B.
+N.B.: for every A just one B
+
+-Range: subset of the codomain where the values fall.
+-proprieties:
+	-injection: different A give different B
+	-surjection: range = codomain
+	-bijection: both of above => PERMUTATION (bijection of a set in itselfs)
+-inverse: f -> f^-1 (need to be an injection)

@@ -1,0 +1,290 @@
+
+STANDARD
+ls	List directory contents
+	-lh	extra info
+cd	Change directory
+	-	return to prewious
+	..	up one
+pwd	Return working directory name
+chmod	Change file modes or Access Control Lists
+	-	remove specific permission
+	+	add specific permission
+	u+\u-	add\remove to user
+	g+\g-	group
+	o+\o-	everybody
+cp	Copy files
+mv	Move/rename files
+	mv	(file) (new location\new name)
+rm	Remove directory entries
+	-i	ask to continue
+rmdir	Remove empty directories
+mkdir	Create a directory
+touch	Change file access and modification times\create empty file
+more/less	Display the content of the file	
+find	Walk a file hierarchy
+
+USEFULL DATA
+man	Format and display the on-line manual pages which Locate a program file in the user’s path
+which	locate command
+whereis	Locate programs
+whatis	Display one-line manual page descriptions.
+file	Determine file type
+df	Display free disk space
+	-h	human readable
+du	Display disk usage statistics
+
+FILE COMPRESSION
+gzip\gunzip	Compress or expand files 
+zip\unzip	Package and compress (archive) files (create a new one)
+tar cfz\xfz	Manipulate tape archives
+
+CONNECTION
+wget	The non-interactive network downloader 
+scp	Secure copy (remote file copy program)
+ssh	OpenSSH SSH client (remote login program)
+
+UTILITY
+echo	Write arguments to the standard output
+	-n	no newline
+	-e	add tad between strings(divided by \)
+bc	An arbitrary precision calculator language
+rev	Reverse lines characterwise
+
+TEXT MANIPULATION
+cat	Concatenate and print files
+head	Display first 10 lines of a file
+	-5	first 5 lines(work for all number)
+tail	Display the last 10 part of a file
+	-5	last 5 lines(work for all number)
+	-n  +5	all file minus the first 5 line
+sort	Sort lines of text files(lexicographic)
+	-k 2	sort based on second column(works all number)
+	-n	numeric sort
+	-r	reverse sorting
+	-u	removes duplicated lines
+uniq	Report or filter out repeated lines in a file(works only if are consecutive)
+	-d	show the duplicated lines
+cut	Cut out selected portions of each line of a file
+	-f 2	cut(show only) column 2(works all number)(uses tab as separator)
+	-c 2	character position(see up)
+	-d 'à'	uses à as a separator(can use everything)
+wc	Word, line, character, and byte count
+	-l	number of lines
+	-c	characters(including new line)
+	-w	words
+diff	Compare files line by line(says in wich file the elements are unique)
+	-q	equal or different 
+comm	Select or reject lines common to two files(works only if sorted)[1col:1file\2col:2file\3col:both file]
+	-1\2\3	remove specific column in output
+
+ADAPT COMMAND
+alias	Set default option on command
+
+FIND
+find	<search path> -<search type> <search argument>
+	-name <pattern>	Searches a file by its name (pattern)
+	-user <uname>	Searches files owned by uname
+	-size n[cwbkMG]	Searches files usingn units of space (c=bytes,M=MB, ..)
+	-perm <mode>	Searches files whose permissions are exactly mode
+----------------------PIPELINE--------------------------------------------------------------------------------
+IMPUT OUTPUT ERROR
+stdin	0	Standard input stream (e.g.  keyboard)
+stdout	1	Standard output stream (e.g.  monitor)
+stderr	2	Standard error output stream (usually on monitor)
+
+REDIRECTION
+cmd > file		Redirects the standard output of cmd to file
+cmd 2> file		Redirects the standard error output ofcmdtofile
+cmd &> file		Redirects the standard output and error ofcmdtofile
+cmd > file1 2> file2	Redirects the standard output of cmd to file1 and error to file2
+cmd >> file		Appends the redirected standard output of cmd to the end of file
+cmd 2>> file		Appends the redirected standard error of cmd to the end of file
+cmd < file		cmd takes the standard input from file
+cmd1 | cmd2		Takes the standard output of cmd1 as standard input for cmd2
+
+OPERATORS
+Addition		+
+Equal to		==
+AND			&&
+Subtraction		-
+Not equal to		!=
+OR			||
+Multiplication		*
+Less than		<
+NOT			!
+Division		/
+Less than or equal 	<=
+Module			%
+Greater than		>
+Incr/Dec		++,--
+Greater than or equal 	>=
+---------------------REGULAR EXPRESSION--------------------------------------------------------------------------
+.	Matches any single character
+*	The preceding item is matched zero or more times
+^	Matches the position at the beginning of the string
+[  ]	Match any one of the characters enclosed in [ ]
+[^]	Match any character except those enclosed in [ ]
+$	Matches the position at the end of the string
+{N}	The preceding item is matched exactly N times
+{N,}	The preceding item is matched N or more times
+{N,M}	The preceding item is matched at least N and at most M times
+\	Turn on or off the meaning of a metacharacter
+EXTENDED
+?			The preceding item is matched at most once
++			The preceding item is matched one or more times
+(<exp1> | <exp2>)	Matches either the expression exp1 or exp2
+GREP----------------------------------------------------------------------
+grep [options] <pattern> <files>
+egrep			extended regular exp
+fgrep 			fast but fixedpatterns
+z(one of the other)	gzip files
+
+OPTION
+-v	removes the searched expression
+-e	more than one option(put before each option)(one or another)
+-m 1	just 1 occurance of the search
+-c	count
+-w	metch exactly the word
+------------------------------------AWK(automated loop for pharsing)--------------------------------------------------
+BASIC
+awk ’/pattern/{action}’ [filename]
+	BEGIN{}	beginning pattern
+	END{}	ending pattern
+	;	divide action inside  {}
+	-f ''	set field separator
+VARIABLES PRESET
+$1	field 1($0: entire line)
+NF	number of fields
+NR	numeral of record
+FS=''	set field separator
+RS=''	set record separator	
+OFS=''	set output field separetor (always used as ,)
+
+OPERATORS
+Match			~
+Not match 		!~
+Addition		+
+Equal to		==
+AND			&&
+Subtraction		-
+Not equal to		!=
+OR			||
+Multiplication		*
+Less than		<
+NOT			!
+Division		/
+Less than or equal 	<=
+Module			%
+Greater than		>
+Incr/Dec		++,--
+Greater than or equal 	>=
+
+
+
+STANDARD
+if(condition){action} else(){}
+while(){}
+
+FUNCTION
+printf "format,var,var,var"	print without format
+	%c		cheracter
+	%d		decimal
+	%f		float
+	%s		string
+getline			take next line
+array[key]=		load array (unique array key)
+length(str)		Returns the length of str
+sub(regex,repl,str)	Replaces with repl the substring matching regexp in str.
+substr(str,pos)		Extracts the substring in str from pos to the end
+substr(str,pos,len)	Extracts len characters in str starting from pos
+index(str,search str)	Returns the position of the search str in str
+tolower(str)		Converts the string to lower case
+toupper(str)		Converts the string to upper case
+---------------------SED(string substitution)-------------------------------------------------------------------
+sed [options] ’command;command’ [file]
+
+COMMANDS
+''				print not parsed(because defoult print)
+'d'				delete
+'P'				print: once parsed and twice not parsed
+	'1,3p'			1 to 3 line
+	'1,+4p'			1 to 5 line
+	'1~3P'			every 3 start from 1 line
+'s/regexp/replacment/flag'	replace	
+	FLAGS
+	g			all match 
+	4			4 istance
+	p			print substitute
+OPTION
+-n				no defoult print
+-i 				apply the change to the original file deletion
+
+---------------------GLOBBING-----------------------------------------------------------------------------------
+WILDCARD SYMBOL
+*		Matches any number of any character, including none(ES. k* give us everything with k at the start)
+?		Matches any single character
+[abc]		Matches one character given in the bracket
+[a-z]		Matches one character from the range given in the bracket
+[!abc]		Matches any character that is not given in the bracket
+[!a-z]		Matches any character that is not in the range given in the bracket
+{aa, bb, cc}	Expands/generate any pattern that is given in the list(aa or bb or cc)
+
+CHARACTER CLUSTER
+[:lower:]	Lower case characters a-z
+[:upper:]	Upper case characters A-Z
+[:alpha:]	Alphabetic characters: [:lower:] + [:upper:]
+[:digit:]	Decimal digits: 0-9
+[:xdigit:]	Exadecimal digits: 0-9, a-f, A-F
+[:alnum:]	Alphanumeric characters: [:alpha:] +[:digit:]
+[:space:]	Whitespace characters:  spaces, tabs, newlines, etc
+[:punct:]	Punctuation characters:
+[:graph:]	Graphically printable characters: [:punct:] + [:alnum:]
+[:print:]	Printable characters: [:graph:] + [:space:]
+[:cntrl:]	Control characters:  non-printable characters
+----------------------SHELL SCRIPT-----------------------------------------------------------------------------------
+
+$0	Script name
+$1	First argument of the script
+$2	Second argument of the script
+$n	n-th argument of the script (nis a number)
+$#	Number of arguments of the script
+$*	All arguments, but the script name
+
+CONDITION
+[ -e FILE ]		True if FILE exists
+[ -d FILE ]		True if FILE exists and is a directory
+[ -s FILE ]		True if FILE exists and has size greater than zero
+[ -z STR ]		True if the length of the string STR is zero
+[ -n STR ]		True if the length of the string STR is non-zero
+[ STR1 == STR2 ]	True if the strings STR1 and STR2 are equal
+[ STR1 != STR2 ]	True if the strings STR1 and STR2 are not equal
+[ STR1 < STR2 ]		True if the string STR1 precedes lexicographically STR2
+[ N1 -eq N2 ]		True if the integers N1 and N2 are equal
+[ N1 -ne N2 ]		True if the integers N1 and N2 are not equal
+[ N1 -gt N2 ]		True if the integer N1 is greater than N2
+[ N1 -ge N2 ]		True if the integers N1 is greater than or equal to N2
+[ N1 -lt N2 ]		True if the integers N1 is lower than N2
+[ N1 -le N2 ]		True if the integers N1 is lower than or equal to N2
+----------------------EXTRA------------------------------------------------------------------------------------------
+OPTION
+-R\-r	applied to everything below that
+--help	help on command
+
+
+PERMISSION
+-(owner)(group)(everyone)
+	rwx
+		r: read
+		w: write
+		x: execute
+N.B: combination are coded
+
+INTERFACE
+-CLI: command line
+-GUI: graphical
+
+DIRECTORY
+.		Current directory
+..		Parent directory of the current directory
+∼		Home directory
+/dev/null	eat everything

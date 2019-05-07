@@ -1,0 +1,53 @@
+GRAPH
+-undirected
+-directed
+
+-strongly connected: a->b and b->a
+
+PATH
+-simple
+-cycle
+
+RAPRESENTATION
+-adjiacency matrix
+-adjacency list
+	-one vector for each vertex with list of adjacency
+-adjacency set
+	-1 vector: vertex and position of start in second vector
+	-2 vector: adjacency
+
+VISIT---------------------------------------
+-BFS
+Procedure BFS(G : graph; u : vertex)
+Q := NewQueue(); 
+Enqueue(Q, u);
+/* mark u as discovered */
+while not Empty(Q) do
+	u := Dequeue(Q);
+	/* visit the vertex u  */	
+	for each v in AdjSet(G, u)
+		if (v is not marked) and (v is not in Q) then
+			Enqueue(Q, v)
+			/* mark v as discovered */
+
+
+-DFS
+Procedure DFS(G : graph; u : vertex)
+/* visit the vertex u and mark it as visited */
+for each v in AdjSet(G, u)
+	if (v is not marked) then DFS(G, v)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

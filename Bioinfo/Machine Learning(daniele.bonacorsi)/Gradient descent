@@ -1,0 +1,51 @@
+REGRESSION
+Minimize the square distance between the hypotesis and the trining set tuning the parameters of the regression. => COST FUNCTION
+
+1) with fixed theta change x => h0 space
+2) variate theta  => j space
+
+DEFINITION
+H: function
+Theta: parameters
+J: cost function of theta
+
+NORMAL EQUATION (alternative ? to GD)----------------------------
+It is the analitical way to get the tetas but is too long based on dataset.
+
+BATCH GREDIENT DESCENT (find local minimum)------------------------- 
+-start with some theta
+-variate to minimize J(theta,theta)
+-stop when minimized
+N.B.:
+-theta
+-derivatives
+-lerning rate: can be to slow or overshoot and never come to a minimum
+	(higer number = more aggressive learning rate)
+
+TYPE
+-batch: use all the cases in the training set
+
+GD APPLICATION
+-cost function
+-type of regression
+-more features = more parameters
+
+LEARNING RATE
+-plot J(teta) -> stop the learining if the improvment for each 
+		iteration in not enough
+-chose a 'good' alpha: basic log, advanced log\3 increase
+
+N.B: STOCHASTIC GD
+update thetas for EVERY	point in the data: quite random but will work
+
+N.B: MINI BATCH GD
+update thetas using a batch of X data for every loop (N.B: X is a parameter that must be tuned)
+
+
+
+
+
+
+
+
+

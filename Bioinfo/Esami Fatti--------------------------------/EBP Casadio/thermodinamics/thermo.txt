@@ -1,0 +1,30 @@
+THERMODINAMICS: science of how trasformation work free energy wise (explain function)
+
+U(internal energy)=Q-W
+H(enthalpy)=U+pv
+DeltaS(etropiy)=DeltaQ(reversible)\T
+G(gibbs)=H-TS
+
+eqK=[prodotti]\[reagenti]
+DeltaG=-R*T*ln(Keq)     R=8,314  DelatG=DeltaG+RTln(Keq)
+
+
+
+ENERGY COUPLING
+
+DGibbs\Dmol=chemical potential=ammount of work you get changing the concentration of the solution
+Y(chemical potential)=Y0+RTlnC(cncentration)
+If you have two different solution with C1 and C2 with a semipermeable membarane between them you have:
+DY=+RTln(C1\C2)
+IT IS THE MAIN OBJRCTIVE OF RESPIRATION AND PHOTOSYNTESIS to recharge ATP
+
+
+Kinetiks vs thermodinamics: time vs no time 
+
+
+FUNTION:
+molecular
+systemic
+
+REDOX
+DelataG=-fiN (faraday const\cell potential\n' of electrons)

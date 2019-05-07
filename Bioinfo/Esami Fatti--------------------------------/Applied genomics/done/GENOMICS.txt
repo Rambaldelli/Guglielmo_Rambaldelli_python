@@ -1,0 +1,28 @@
+SEQUENCING:
+MAIN PROBLEM: short read one\twohundred nucleotides N.B. PACBIO produce long read but slower
+STORAGE: the data collected are stored in FASTQ format: name-sequance-quality score for evey nucleotide(asci char.)
+
+-SANGER: 
+PCR with one primer and COLORED ddNTP then run on gell and based on the lenght of the fragment you can order the different colored ending nucleotides.
+
+-ION TORRENT TECNOLOGY: 
+SAMPLE PREPARATION: fragment genome randomly, bind stichy hands an EMULSION(every droplet of oil will be a single well of the reading with the fragment bound to the "sphere") PCR(univ. primers)=> a lot ofcopy of the same fragment.
+one primer bound to the dish and a lot of copy of the sequence bound to it, add nucleotides (relesed in order not uniform to see if there are mixed reads in the same well) binding relese H+ that can be sensed and so we can know if that specific nucleotide bound to the chain(or multiple copy of the same one[increase even more the PH change but can give problem on long stertch of the same nucleotide]).
+More or less one error every onehundred nucleotides.
+COVERAGE: % of genome covered by at least one read.
+DEPTH: how many reads of that specific area we have
+
+-ROCHE454:
+Can sequence long stretch of genome.
+Too much expansive.
+SAMPLE PREPARATION: exactly the same of ion torrent but the reads ar done with light produced by enzime from the PPi(PPi=>ATP=>light) relesed by the bond formation.
+
+-ILLUMINA: Most used one(cheap) and no problem with omopolimeric region.
+SAMPLE PREPARATION: add primer to the fragment, bound them to a surface with both end bound(bridge) than we keep anealing and PRCing so we crate cluster bound to the surface together.
+
+We can add all nucleotides together and each of them have a different fluor so we can see wich one bound each time.
+After one is bound we need to remove the fluor and the block bound to the nucleotide for the rection to procede.
+
+
+
+

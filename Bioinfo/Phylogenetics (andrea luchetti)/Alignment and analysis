@@ -1,0 +1,30 @@
+CODING SEQUENCE
+-must have number of nuclotide that can be divided by 3 (even if we had a rading frame shift unless is damaged)
+-use coding sequences (more conserved)
+-be wary that deifferent zone have different selective preassure
+-insertion and deletion:
+	-entire codon: can affect gene or not
+	-some nucleotides: probabliy damaged or changed gene
+
+METHODS:
+ PROGRESSIVE ALIGNMENT (clustal)------------------------------
+-try to rencostruct the ancestral state in every site
+-multiple sequence alignment
+	-(match:1, mismatch:-1, gap linear(-2) or affine(-3 , -1))
+	-pairwise alignment -> profile (N.B.: sequence order matter)
+	-profile alignment
+-sequence order
+	-pairwise all vs all 
+	-create guide tree
+	-decide imput order
+
+GUIDE TREE
+-clustal
+	-can see tree
+	-can provide you own tree
+
+ITERATIVE ALIGNMENT (muscle, muffet)----------------------
+-raw distance matrix -> tree
+-improve alignment
+-iterate until plateau
+

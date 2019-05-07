@@ -1,0 +1,8 @@
+METRICS
+SKEWED CLASS: number of positive is much smaller than negative
+
+CONFUSION MATRIX
+	-GRAPH: precision vs recall
+		F1 score: 2(p*r)\(p+r) : use to chose best balacing 
+
+

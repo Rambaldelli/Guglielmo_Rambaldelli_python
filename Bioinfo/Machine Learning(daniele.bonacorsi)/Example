@@ -1,0 +1,18 @@
+HOUSE EX
+Decide the price of a house based on data -> SUPERVISED REGRESSION (predict number)
+
+CANCER EX
+Define if a cancer i malign or benign -> SUPERVISED CLASSIFICATION (predict 0 or 1)
+-find a curve that diveide the two pool of data
+-ad 0 and 1 (the two group) as another dimension
+
+INTERNET ARICLE EX
+Devide internet articles in cluster -> UNSUPERVISED CLUSTERING
+
+DEVIDE PEOPLE EX
+Devide people based on an unknown basis -> UNSUPERVISED CLUSTERING
+
+COCKTAIL PARTY PROBLEM EX
+distinguish a voice in the middle of a lot of people specking -> UNSUPERVISED NON-CLUSTERING
+
+

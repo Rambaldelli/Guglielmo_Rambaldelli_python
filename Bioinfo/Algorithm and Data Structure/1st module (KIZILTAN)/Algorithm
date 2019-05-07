@@ -1,0 +1,28 @@
+INSTANCE:
+specific case of your problem
+
+ALGORITHM VS HEURISTIC PROCEDURE
+One is mathemarically prooven the other simply work most of the times.
+
+ALGORITHM: must be: correct and efficient
+-input
+-output
+-definite
+-finite
+-effective
+
+-Efficency
+	memory
+	-time:we use running time and not computing time:number of steps\N (lenght of input)
+
+APROACH
+-inceremental
+-divide and conquire
+
+
+
+
+		
+
+
+

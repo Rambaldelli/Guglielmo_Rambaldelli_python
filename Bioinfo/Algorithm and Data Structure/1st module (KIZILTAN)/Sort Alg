@@ -1,0 +1,159 @@
+INSERT SORT(incremental)--------------------------------------------
+add one element at time and than sort it starting from the end.
+
+ALG
+for j<-2 to lenght[a]do
+	key<-a[j]
+	i<-j-1
+	while i > 0 and A[i] > key do
+		A[i+1]<-A[i]
+		i<-i-1
+	A[i+1]<-key
+
+ANALYSIS
+-Best case: an+b -> linear -> teta(n)
+-worst case: an^2+bn+c -> quadratic -> teta(n^2)
+
+MERGE SORT(DEVIDE AND CONQUIRE)------------------------------------
+Keep splitting the array in 2 until just one element for each split.
+than merge the groups sorting them.
+
+ALG
+MERGE-SORT(A, p, r)                     #head recursion
+if p < r
+	q ←(p + r)/2
+	MERGE-SORT(A, p, q) #devide lower side
+	MERGE-SORT(A, q+ 1, r) #devide higher side
+	MERGE(A, p, q, r) #merge while sorting
+
+
+MERGE(A, p, q, r)
+Compute n1 and n2
+Copy the first n1 elements into L[1 . . n1+ 1]and  the next n2 elements into R[1 . . n2+ 1]
+L[n1+ 1] ←inf. 
+R[n2+ 1] ← inf.
+i←1
+j←1
+for k ←pto r do
+	if L[ i] ≤ R[ j ]
+	then A[k] ←L[ i]
+		i←i+ 1
+	else A[k] ←R[ j]
+		j←j+ 1
+
+Initial Call: MERGE-SORT(A, 1, n)
+
+ANALYSIS
+-worst case: aT(n/b) + D(n) + C(n) -> teta(N log N)
+
+HEAPSORT--------------------------------------------------
+BUILD-MAX-ARRAY(A) 
+for i← length[A]downto2 do 
+	exchange A[1] <-> A[i] 
+	heapsize[A] ← heapsize[A]-1 
+        MAX-HEAPIFY(A, 1)      
+
+MAX-HEAPIFY(A, i) #REORDER FROM ERROR IN i
+l←LEFT(i) 
+r←RIGHT(i) 
+ifl≤heapsize[A] and A[l] > A[i] 
+	thenlargest ←l
+	elselargest ←i
+ifr≤heapsize[A]andA[r] > A[largest] 
+	thenlargest ←r
+iflargest ≠i
+	then exchange A[i] <->  A[largest] 
+            MAX-HEAPIFY(A, largest)E
+
+ANALYSIS
+Running time: O(nlogn) 
+
+
+QUICKSORT(div. and conq,)---------------------------------------------
+Keep dividing in two array in in wich the elements are divided in max half and min half by the middle element A[q]
+
+QUICKSORT(A, p, r)               #tail recursion 
+if p < r then
+	q← PARTITION(A, p, r) 
+	QUICKSORT (A, p, q-1) 
+	QUICKSORT (A, q+1, r) 
+
+PARTITION (A, p, r)                 #using the last element as A[q]
+x ← A[r] 
+i←p – 1 
+for j=p to r-1 do
+	if A[j] ≤ x  then   #move minor elements to start
+		i←i + 1 
+		exchange A[i] ↔ A[j] 
+exchange A[i+1] ↔ A[r]      #move 'middle element' from last to middle
+return i+1
+
+Inital Call: QUICKSORT(A, 1, length[A])
+
+ANALYSIS
+-Runtime Balanced: Θ (nlogn) 
+-Runtime Unbalanced: Θ(n^2)
+-Avarage Running time: Θ(nlogn)
+
+COUNTING SORT------------------------------------------------------------
+–Determine for each input element x, count the number of elements less than or equal to x 
+–Place element x into its correct position in the output array by using the counters
+
+COUNTING-SORT(A, B, k) 
+for i← 0to k do C[ i ] ← 0 
+ 	for j ← 1to length[A] do  
+		C[A[ j ]] ← C[A[ j ]] + 1 
+		C[i] contains the number of elements equal to i
+for i← 1to k do C[ i ] ← C[ i ] + C[i -1] 
+	C[i] contains the number of elements ≤i
+for j ← length[A]downto1 do  
+	B[C[A[ j ]]] ← A[ j ] 
+	C[A[ j ]] ← C[A[ j ]] - 1
+
+ANALYSIS
+Running time: Θ(n + k)
+NOT STABLE
+
+RADIX SORT------------------------------------------------------------
+–For a d digit number, sort the least significant digit first
+–Continue sorting on the next least significant digit, until all digits have been sorted 
+–Requires only d passes through the list 
+
+RADIX-SORT(A, d) 
+for i← 1to ddo use a stable sort to sort array A on digit i
+
+•1 is the lowest order digit, d is the highest-order digit
+
+LSD vs MSD Radix Sort
+
+ANALYSIS
+Running time: Θ(d(n+k)) 
+
+COUNTING SORT----------------------------------------------------------
+select all element lesser than one element and than sort the other based on index
+
+COUNTING-SORT(A, B, k) 
+for i← 0to k do C[ i ] ← 0 
+for j ← 1to length[A] do  
+	C[A[ j ]] ← C[A[ j ]] + 1 
+	C[i] contains the number of elements equal to i
+for i← 1to k do C[ i ] ← C[ i ] + C[i -1] 
+	C[i] contains the number of elements ≤i
+for j ← length[A]downto1 do  
+	B[C[A[ j ]]] ← A[ j ] 
+	C[A[ j ]] ← C[A[ j ]] - 1
+
+ANALYSIS
+running time: Θ(n) 
+N.B.:not stable
+
+RADIX SORT-------------------------------------------------------------
+sort one column at time
+
+RADIX-SORT(A, d)
+for i← 1to d
+	do use a stable sort to sort array A on digit i
+
+ANALYSIS
+Runnin Time: Θ(d(n+k)) 
+

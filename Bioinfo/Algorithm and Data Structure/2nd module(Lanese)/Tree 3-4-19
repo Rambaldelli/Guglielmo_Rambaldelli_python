@@ -1,0 +1,119 @@
+ALGEBRAIC DATA TYPE
+Data structure that have particular operation possible on it (es. stack,queue)
+
+STACK-------------------------------------
+PUSH: add element
+POP: remove element
+TOP: get first element
+EMPTY: check if stack empty (true\false)
+NEW: create stack
+
+TREE--------------------------------------
+-all connected
+-position
+	-left: smaller and !! equal !!
+	-right: bigger
+-only one way between two nodes
+=> every tree with N node has N-1 edges (necessary but not sufficient)
+-N(if complete)= 2^(height+1)-1
+
+DEFINITION
+-HEIGHT: longhest path
+-DEPTH: from root
+
+TYPE
+-UNROOTED
+-ROOTED
+	-UNORDERED
+	-ODERED
+		-BINARY
+			-COMPLETE
+				-SEARCH
+
+N.B.:CRATE WORST BALANCED TREE:
+left: add one node
+right: add the previous tree
+
+POINTER IMPEMENTATION
+-we have a pointer to the root that it is a node
+-every node has a value and N pointer to his children 
+	CAN also have one to the parent (usefull if you need comonly
+	to look for parents)
+
+AVL TREE-----------------------------------------------------------------------------------
+BST tree but best possibly balanced
+Beta: balancing factor: different between left and right sub tree.
+	-We minimize it at max 1 on each node
+	
+ROTATION
+	-when we insert or delete we need a way to rebalance the tree => ROTATION	
+		-if the unbalanced tree is in the middle we will  need more than one roation.
+		-the roation will be needed only on the line from the unbalancing and the root.
+
+Running time: always O(log N)
+
+
+
+VISIT(running time : N)-----------------------------------------------
+Explore very node one time, the order refers to the root reading in respec of the pointer to his child.
+-PRE ORDER
+-IN ORDER
+-POST ORDER (es math)
+	first the left and right pointer than the value itselfes.
+
+FUNCTION Running Time O(h)
+-SEARCH
+-MIN
+-MAX
+-SUCCESSOR
+-PREDECESSOR
+-INSERTION
+function BSTinsert(T, k, v)
+	P := nil
+	while (not empty(T)) do    // search for position
+		P := T
+		if getRoot(T).key > k then
+			T := getLeftSubtree(T)
+		else
+			T := getRightSubtree(T)
+		N := newBST(newEmptyBST(),k,v,newEmptyBST())
+		if (empty(P) ) then 
+			return N;   // insert in empty tree
+		if (k < getRoot(P).key) then     // insert in not empty tree		putLeftSubtree(P,N)
+		else
+			putRightSubtree(P,N)
+
+
+-DELETE
+function delete(T, n)
+	T1=getSubtree(T,n)
+	if empty(getLeftSubtree(T1)) then
+		replaceSubtree(T,T1,getRightSubtree(T1))
+	else
+		if empty(getRightSubtree(T1)) then
+			replaceSubtree(T,T1,getLeftSubtree(T1))
+		else
+			Tmin=minTree(getRightSubtree(T1))
+			n.key=getRoot(Tmin).key
+			n.value=getRoot(Tmin).value
+			replaceSubtree(T,Tmin,getLeftSubtree(Tmin)) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+NCBI
+-genebank:	gene sequence
+-gene:		gene specific search
+-refseq:	genomic sequence
+-dbSNP:		SNP
+	-rs-----:	code for cluster of single SNP
+-OMIM:		genetic disorder trait(16000 genes)
+
+-gquery(entrez) : 	database wide search system
+-blast and psi-blast: 	tool, psi can conserve the profile(multiple run of blast) and so reach more distantly related homologues. 
+-HMMER: 		same as blast but based on HMM
+
+N.B: the WGS(whole genome shotgun) sector is increasing very fast.

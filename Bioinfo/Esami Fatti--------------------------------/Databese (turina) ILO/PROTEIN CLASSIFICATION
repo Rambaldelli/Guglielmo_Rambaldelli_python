@@ -1,0 +1,21 @@
+USED:
+-InterPro:uniprot classification system
+-Pfam
+
+PROTEIN CLASSIFICATION:
+-family
+-domains
+-signature(structure)
+	-patterns(using regular expression)[PROSITE Database]
+	-profile(using position specific substitution matrix(matrix for multiple sequence alinment))[CDD, HAMAP, PROSITE, PRODOM Database]
+	-fingerprints:pattern in conserved regions[PRINTS Database]
+	-HMM[Pfam, SMART, TIGRFAM, PANTHER, Gene3D, Superfamily Database]
+
+PROTOCOL:
+-sequence
+-model
+-database reserch
+-complete model
+-reserch on other proteinù
+
+

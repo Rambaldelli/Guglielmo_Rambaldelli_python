@@ -1,0 +1,31 @@
+KEYWORDS:
+sensibility
+compartimentation
+coverage of different method of getting data
+annotation
+modelling
+
+
+>Data(genomics,transcriptomics,regulomics, proteomics, interactomics,metabolomics,physiomics)->
+--Genomics:just chemical info of a single cell
+--Transciptomics:RNA(pre-protein) info of a population
+--regulomics:moleculs responible for trascription
+--proteomics:protein interaction
+--metabolomics:metabolites and enzimatic chemistry
+--lipidomics:lipid chemistry
+=>FILTERING DATA(GOOD DATA SAVED)
+=>DATA ANALYSIS(REDUCE DATA TO MODEL)
+>Fitting procedures(see if a model is good enough to understand what are you trying to understand)
+--interpolation
+--regression
+>Compute trought a model
+>Test the model with statistics
+
+CHEMISTRY
+ionic= 10kkal\mol
+covalent= 100kkal\mol
+
+-different qtipe of bond
+-pka and ph
+-bond energy
+

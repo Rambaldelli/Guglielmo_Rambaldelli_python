@@ -1,0 +1,19 @@
+def count(t)
+	if get-left(t)==empty and get-right(t)==empty
+		c=1
+	elif get-left(t)==empty
+		c=count(get-right(t))
+	elif get-right(t)==empty
+		c=count(get left(t))
+	else
+		c=count(get-left(t))
+		c=c+count(get-right(t))
+	return c
+
+
+ES PER CASA
+function that from a tree create another one with doubled all the value 
+
+
+
+	

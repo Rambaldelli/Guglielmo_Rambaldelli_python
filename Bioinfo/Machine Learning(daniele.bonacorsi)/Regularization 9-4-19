@@ -1,0 +1,61 @@
+UNDERFITTING: high bias
+RIGHT ONE
+OVERFITTING: high variance
+	-specific curve for your data but no usefull interpolation
+
+OVERFITTING SOLUTION
+-reduce features
+-tune the importance of some feature !!! THETA !!!
+
+COST FUNCTION
+ad to cost function: RANDOM BIG NUMBER*theta^2 for each theta we want to regolarize.
+=> use a regularization term that is applied to all parameters in different ways. -> Lambda -> 1-(LAMBDA*1/THETA) => always smaller then one
+ 
+=> KEPPING THETA LOW AVOID OVERFITTING
+
+DIAGNOSIS-------------------------------------------------
+-divide data: part for training(60%) and part for test(20%) and part for cross validation(20%)
+-reduce feature
+-increase data
+
+MODEL SELECTION
+-Create various model using an increasing D (number ot theta)
+-compare the J(cross validation test) of the  various model and minimize
+LAMBDA SELECTION
+-try multiple lambda on the  training set
+-compare the J(cross validation test) of the  various model and minimize
+-compare the J(test set) of the  various model and minimize
+
+
+
+GRAPH----------------------
+-ERROR\D
+high bias = underfitting
+high variance = overfitting
+
+-lambda to high: underfitting
+-lambda to low: overfitting
+
+-ERROR\LAMBDA 
+TRAINING SET:increase with lambda
+CROSS VALIDATION: good for middle lambda
+
+N.B.: D have the opposite effect of Lambda
+
+-ERROR\M (TOTAL DATASET SIZE)
+TRAINING ERROR: error slowliy get larger with M
+CV ERROR: error decrease with M increasing
+
+ANALYSIS (for high M)
+CV=TRAINING : high bias => more data are useless
+CV != TRAINING : high variance => get more data
+
+
+
+
+
+
+
+
+
+

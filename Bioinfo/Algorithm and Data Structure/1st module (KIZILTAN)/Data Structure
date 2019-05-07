@@ -1,0 +1,151 @@
+TREE
+-n nodes
+-n-1 edges
+-all connected
+-can e rooted (also subtrees)
+TYPE
+-binary: always devided by 2 or less (N.B.: need to be oredered)
+-full binary: binary but leaf or 2 children
+-complete: all breanch same depth
+
+
+
+DATA STRUCTURE
+-HEAP--------------------------------------------------
+	-near complete binary tree
+	-filled left to right
+	-each child key is lower than parents
+	-height = log(n)
+	STRUCTURE (using an array)
+	-left = 2i
+	-right = 2i+1
+	-parent = i/2
+	-leaf = n/2 +1 to n
+
+SUMMARY
+–MAX-HEAPIFY		O(logn) 
+–BUILD-MAX-HEAP		O(n) 
+–HEAPSORT		O(nlogn) 
+–MAX-HEAP-INSERT	O(logn) 
+–HEAP-EXTRACT-MAX	O(logn) 
+–HEAP-INCREASE-KEY	O(logn) 
+–HEAP-MAXIMUM		O(1)
+
+
+ALG
+MAX-HEAPIFY(A, i) #REORDER FROM ERROR IN i
+l←LEFT(i) 
+r←RIGHT(i) 
+ifl≤heapsize[A] and A[l] > A[i] 
+	thenlargest ←l
+	elselargest ←i
+ifr≤heapsize[A]andA[r] > A[largest] 
+	thenlargest ←r
+iflargest ≠i
+	then exchange A[i] <->  A[largest] 
+            MAX-HEAPIFY(A, largest)E
+
+-Running time: O(logn)
+
+
+BUILD-MAX-HEAP(A)    #BUILD NEW
+heapsize[A]←length[A] 
+fori←⎣length[A]/2⎦downto1 
+	do MAX-HEAPIFY(A, i)
+
+-Running time: O(n)
+
+-PRIORITY QUEUE-----------------------------------------------------
+	-each element has a priority key associated
+	-uses heap
+
+ALG
+HEAP-EXTRACT-MAX(A)                       #get max key
+if heapsize[A] < 1 
+	then error “heap underflow” 
+max ← A[1] 
+A[1] ←A[heapsize[A]] 
+heapsize[A] ← heapsize[A]-1 
+MAX-HEAPIFY(A, 1)                 
+return max
+
+-Running time:O(logn)
+
+HEAP-INCREASE-KEY(A, i, key)                  #change key of element
+if key < A[i] 
+	then error “new key is smaller than current key” 
+A[i] ← key 
+while i > 1 and A[PARENT(i)] < A[i] 
+	do exchange A[i] <-> A[PARENT(i)] 
+		i←PARENT(i)
+
+-Running time: O(logn) 
+
+MAX-HEAP-INSERT(A, key)
+heapsize[A]←heapsize[A] + 1 
+A[heapsize[A]] ← -∞
+HEAP-INCREASE-KEY(A, heapsize[A], key)
+
+-Running time:O(logn)
+
+HASH TABLE----------------------------------------------------------
+Array of couples integer key-data if the key is empty return NIL
+We have an hash function (h) that direct us to the storingpoint based on key
+For overlaping key we use a linked list
+=> it is an unordered indexed list  of linked lists
+
+N.B.:
+-hash function must be fast but spread evenly the data
+-list size usually 1\5 - 1\10 on number of data
+-LOAD FACTOR: tot elements\number of slots
+	-avarage number of elements of each linked list
+
+ALG
+CHAINED-HASH-INSERT(T, x) 
+insert x at the head of list T[h(key[x])]
+
+Running time: O(1) 
+
+CHAINED-HASH-SEARCH(T, k)
+search for an element with key k in list T[h(k)]
+
+Running time: h(k) 
+
+CHAINED-HASH-DELETE(T, x)
+delete x from the list T[h(key[x])]
+
+Running time:
+–singly linked deletion takes as long as searching
+–O(1) time if the lists are doubly linked
+
+SET-------------------------------------------------
+In computer science, a set is an abstract data type that can store unique values, without any particular order.
+
+DICTIONARY------------------------------------------------------------------
+
+STACK----------------------------------------------------------------------------
+computer science, a stack is an abstract data type that serves as a collection of elements, with two principal operations:
+	-push, which adds an element to the top collection
+	-pop, which removes the most recently added element 
+LAST IN FIRST OUT
+
+QUEUE-------------------------------------------------------------------------
+-insert from tail
+-extractfrom head
+
+FIRST IN FIRST OUT
+
+LINKED LIST-----------------------------------------------------------
+linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next: node contains  data, and a reference
+
+-SINGLE: link to next element
+-DOUBLE: link to next and previous element
+-CIRCULAR: double and first and last element linked
+
+N.B.: linked list ar good to rappresent trees.
+
+
+
+
+
+

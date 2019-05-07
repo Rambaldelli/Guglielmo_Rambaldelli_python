@@ -1,0 +1,34 @@
+NETWORK
+-sys biology
+-network biology
+
+---GRAPH THEORY---
+Can be rapresented as adjacency matrix(the degree of a node is with how many nodes interact)
+EDGES
+-undirected(degree): no direction
+-directed(in\out degree): with direction
+-weighted(weighted degree)
+
+SHORTEST PATH 
+The shortest path between the two most distant entities
+
+SCALE FREE
+Few high grade nodes and a lot of low grade
+
+TRANSITIVITY
+If we have dense subnetworks that dose not interact to much between them
+
+CENTRALITY
+Importance of the node in the network considering two start\end node
+
+
+---ANALYSIS---
+-substructure
+-annotation
+
+
+---STRUCTURE---
+-CLIQUE
+Group in wich ever node interact with every elese.
+-COMUNITY
+-MOTIF

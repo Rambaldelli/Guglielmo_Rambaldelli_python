@@ -1,0 +1,14 @@
+FEATURES SCALING----------------------------------------------------
+-Use similar numerical scale for each feature: simplify solution 	space(aim to a nD circle)
+-features between +1 , -1
+METHODS
+-divide by  max value
+-mean normalization
+
+PRO
+-faster
+
+
+CREATE FEATURE OR FEATURE ENGENEERING---------------------------------
+Modify (even unite some of them)feature to present it to the alg in a different form.   => create a bias to orient the alg into taking a concept into consideration.
+

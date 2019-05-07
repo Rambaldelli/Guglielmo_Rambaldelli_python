@@ -1,0 +1,35 @@
+---DETECTING---
+TROUGHPUT HIGH(fast buy false positive\negative) VS LOW(slow but sure)
+BINARY VS CO-COMPLEX
+
+---STORING DATABASES---
+PRIMARY
+META
+PREDICTION
+
+---FEATURES---
+-seq. e structure
+-evolution
+-exp. profile
+-cell localization
+-PTM
+
+---DATA TYPE---
+data\meta(fasta)
+table
+index(pdb)
+tag delimited(html)
+
+---IMEx---
+unified consortium of PPI(12 different resources)
+have corss check after curation(manual)
+
+---STANDARDS---
+FAIR Data Rules => fairification
+
+PSI: standard for genomic data(formal list of items)
+-MIAPE: minimum information
+-XML: exchange format 
+-GO:  Controlled Vocabulary
+
+PSIQUIC: query system related to PSI

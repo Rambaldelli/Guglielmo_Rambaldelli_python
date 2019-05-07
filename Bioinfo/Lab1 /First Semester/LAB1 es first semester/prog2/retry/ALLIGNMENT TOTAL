@@ -1,0 +1,56 @@
+
+# bin/ggsearch36 -E 10.0 -f -12 -g -2 12462.1.seq 12462.2.seq
+GGSEARCH performs a global/global database searches
+ version 36.3.5e Nov, 2012(preload8)
+Query: 12462.1.seq
+  1>>>tar 232 bp - 232 aa
+Library: 12462.2.seq
+      231 residues in     1 sequences
+
+Statistics: (shuffled [500]) Unscaled normal statistics: mu= -83.7580  var=508.9012 Ztrim: 0
+ statistics sampled from 1 (1) to 500 sequences
+Algorithm: Global/Global affine Needleman-Wunsch (SSE2, Michael Farrar 2010) (6.0 April 2007)
+Parameters: BL50 matrix (15:-5), open/ext: -12/-2
+ Scan time:  0.010
+
+The best scores are:                                      n-w bits E(1)
+tem 231 bp                                         ( 231) 1337 133.1       0
+
+>>tem 231 bp                                              (231 aa)
+ n-w opt: 1337  Z-score: 679.8  bits: 133.1 E(1):    0
+global/global (N-W) score: 1337; 85.3% identity (93.5% similar) in 232 aa overlap (1-232:1-231)
+
+               10        20        30        40        50        60
+tar    SSFVPSQKTYPGNYGFRLGFLQSGTAKSVTCTYSPSLNKLFCQLAKTCPVQLWVDSPPPP
+       :: ::::::: :.::::::::.:::::::::::::.:::.: ::::: ::::.::: :::
+tem    SSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFVQLAKTVPVQLYVDSTPPP
+               10        20        30        40        50        60
+
+               70        80        90       100       110       120
+tar    GTRVRAMAIYKKLEHMTEVVRRCPHHERSSDYSDGLAPPQHLIRVEGNLRAEYLDDRNTF
+       :::::::::::. .::::::::::::::::: :::::::::::::::::::::::: :::
+tem    GTRVRAMAIYKQSQHMTEVVRRCPHHERSSD-SDGLAPPQHLIRVEGNLRAEYLDDPNTF
+               70        80        90        100       110         
+
+              130       140       150       160       170       180
+tar    RHSVVVPYESPEIDSECTTIHYNFMCNSSCMGGMNRRPILTIITLEDSCGNLLGRNSFEV
+       ::::::::: ::. :. :::...:::::::::::::::::.::::::: ::::::.::::
+tem    RHSVVVPYEPPEVGSDYTTIYFKFMCNSSCMGGMNRRPILVIITLEDSSGNLLGRDSFEV
+     120       130       140       150       160       170         
+
+              190       200       210       220       230  
+tar    RVCACPGRDRRTEEENLRKKPLDGEYFTLQIRGFKRYEMFRELNDALELKDA
+       :::::::::::::::::::: .::::::::::: .:.:.::: :.:::::::
+tem    RVCACPGRDRRTEEENLRKKTMDGEYFTLQIRGRERFEQFRERNEALELKDA
+     180       190       200       210       220       230 
+
+
+
+232 residues in 1 query   sequences
+231 residues in 1 library sequences
+ Tcomplib [36.3.5e Nov, 2012(preload8)] (4 proc in memory [0G])
+ start: Wed Jan 16 11:31:16 2019 done: Wed Jan 16 11:31:16 2019
+ Total Scan time:  0.010 Total Display time:  0.000
+
+Function used was GGSEARCH [36.3.5e Nov, 2012(preload8)]
+

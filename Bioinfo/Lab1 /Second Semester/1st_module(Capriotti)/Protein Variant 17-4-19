@@ -1,0 +1,23 @@
+PROTEIN VARIANT
+-SNV
+	-synonimous vs non synonimous
+		Use selective preassure to detect if synonimous or not.
+	-coding vs non coding
+	CODING
+		-propertie
+		-evolution
+		-sequence
+		-structure
+	NON CODING
+		-trascription
+		-splicing
+		-micro RNA binding
+		-post.trasc. modification
+	
+-PERSONALIZED MEDICINE
+	-robust genomic data
+	-iterpretation of variant
+	-complexity of network
+	-clinical relevancy
+
+-METAPREDICTORS

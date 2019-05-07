@@ -1,0 +1,40 @@
+2-3 TREE
+-each node can have 2 or 3 values
+-if it has 3 children the root contain 2 values
+-while adding or deleting we might have to unite or divide nodes.
+
+PROPETY
+2^h <= f <= 3^h   leaf
+2^(h+1)-1 <= n <= (3^(h+1)-1)\2  nodes(geometric sum) 
+
+Running Time: O(log N)
+
+ALG-------------------------------------
+-SEARCH
+function 23search( T, k )
+if ( T =Θ(log n)=Θ(log n) null ) then
+	return null;
+node v :=Θ(log n) T.root;
+if ( v is a leaf ) then
+	if ( key of v =Θ(log n)=Θ(log n) k ) then 
+		return v;
+	else 
+		return null;
+else // v is not a leaf
+	if ( k ≤ S[v] )then
+		return 23search( v.left, k );
+	elseif ( v.right !=Θ(log n) null && k > M[v] ) then
+		return 23search( v.right, k );
+	else
+		return 23search( v.mid, k );
+
+
+B-TREE-----------------------------------------------------------------
+-can have any number of node linked to the same one
+
+PROPERTY
+Min Nodes:
+MIn  Key
+h <= log((n+1)\2)
+
+Running Time: we can use binary search inside the signle node: O(log n)

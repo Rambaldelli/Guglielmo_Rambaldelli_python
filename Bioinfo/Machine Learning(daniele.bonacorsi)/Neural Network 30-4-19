@@ -1,0 +1,26 @@
+NEURAL NETWORK
+-complex non linear hypotesis
+-feature space is huge(n is high)
+
+TERMS
+-activation function= hypotesis
+-weights= thetas
+
+
+
+LAYER
+-imput + bias unit(neuron fixed on 1)
+-hidden
+-output
+
+CROSS FEATURES
+multiply 2 features between them to encode non linearity
+	-change nothing 
+	-add non linearity
+
+LOGIC GATE
+we can use a no hidden layer NN to act like a logicalgate using the bias unit as counterweight
+
+BUILDING
+-every layer of the neural netwrk has a matrix with all the weight of that layer
+	Nhidden*(Ninput+1) : dimension of the matrix

@@ -1,0 +1,60 @@
+GROWTH 
+We analyze the asymptotic bheaviour of alg.
+
+teta:		equal
+big o:		less or equal
+big omega:	greater or equal
+little o:	less
+little omega:	greater
+
+PROPERTY
+-transitive (all)
+-reflexive (only fot theta and big*)
+-symmetric (thata)
+-transponse symmetri (o/little omega and O/omega)
+
+Define due costanti(c1 and c2) di una funzione che, per n>0, contengono la nostra funzione 
+-> cercare l' insieme delle funzioni con lo stesso ordine di crescita della nostra funzione.
+-> We need to find c1, c2 and n0 to define it.
+
+INTERPRETATION
+Depending on wich side of the equals in an equation the notation is it has a different meaning.
+(for every function of our kind)=(exist one function of our kind)
+
+METHOD TO CALCULATE (CHECK HOW TO DO MATH)
+-iteration
+-recursion tree
+	-Subproblemsize at level i is : input size \ i
+	-Subproblemsize hits 1 when : i = log(input multipilier(n))
+
+---------------------------------------------------------------------------
+MONOTONICITY
+Always increase or decrease(plateau accepted)
+
+FLOOR AND CEALING (rounding up or down to integer)
+-round down : square brakets with down 'hook'
+-round up : square brakets with upward 'hook'
+
+MODULE (Rest of division)
+We can have modular equivalence => have the same rest in a specific module
+
+EXPONENTIAL VS POLINOMIAL VS LOG (growth wise)
+Logarithmic (es. log n) < polynomial (es. n^a)(for a > 1) < Exponential (es. a^n) < Factorial (es. n!)
+
+N.B.: log(n!) = theta(n log n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

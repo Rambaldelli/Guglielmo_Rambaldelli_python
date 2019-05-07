@@ -1,0 +1,5 @@
+HUFFMAN CODE
+-the frequency of each letter in the message is calculate
+-the set of letters is placed in non-increasing frequency order (e.g. f(a) >= f(c) >= f(b)...)
+-the two letters with min f value (right side) are selected4)a new symbol is created, whose children are the letters selected before. Its frequency is the sum of child's frequencies
+-go back to step 2, until only one symbol remains

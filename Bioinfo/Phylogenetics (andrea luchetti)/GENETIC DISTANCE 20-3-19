@@ -1,0 +1,41 @@
+DEFINITION
+-transition: a-g c-t
+-stransversion: a-c c-g
+
+GAMMA DISTRIBUTION (among site variation)
+Lower alpha => more site we have with low substitution frequency
+
+INVARIANT
+alternative to gamma category
+
+
+
+GENETIC DISTANCE
+-observed: percentage of different bases
+-expected: markov model
+	-each substitution not afected from previous state
+	-fixed substitution rate
+	-equilibrium between frequencies
+	-models:(in order of free parameters(down=more free))
+		-JC69
+		-K80
+		-HKY85
+		-TN93
+		-GTR
+
+N.B.: PROBLEM
+-a single snp could have been changed multiple times (and maybe returned to a prewious state).
+-different duration of geneartion
+-mitocondrial DNA replicate faster then nucleic DNA
+-SATURATION PLOT: signal deacrease with age because of backward mutation untill it reaches a plateau
+	-usually 3rd codon position is saturated
+	-use 1st and 2nd
+
+
+
+
+
+
+
+
+

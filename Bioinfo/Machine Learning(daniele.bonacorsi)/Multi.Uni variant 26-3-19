@@ -1,0 +1,14 @@
+UNI: h=t0 +t1x1
+MULTI: h=t0 +t1x1+t2x2+tnxn
+
+NOTATION
+-top: case
+-bottom: feature
+
+
+HIPOTESIS
+-h=T0+T1x1+ecc
+we need a feature for the teta 0 => x0 that is an array of 1s
+-h=T0x0+T1x1+ecc        -> teta^t x (we unite all teta in a 'teta 					vector')
+
+

@@ -1,0 +1,20 @@
+MOLECULAR PHYLOGENETICS: MULTIPLE GENE ANALYSIS
+
+PIPELINE
+-select some genes
+-align orthologues for each OTU
+	-use a probe from one species to scan the others
+-extract from each OTU
+-concatenate
+
+PROBLEMS
+-PARALOGS: 'fake orthologs' !!!be wary!!!
+-MISSING GENES: some genes can not be present in some lineages
+	-up to 25% of missing genes is not a problem
+	-partially missing genes: MORE PROBLEMATIC
+-COEVOLUTION of genes different from evolution of lineage
+
+APROACH
+-Congruence: 
+	-have multiple tree that, even if different can be reconciled
+-total evidence

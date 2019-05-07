@@ -1,0 +1,34 @@
+>>tem 237 bp                                              (237 aa)
+ n-w opt: 1253  Z-score: 621.1  bits: 122.4 E(1):    0
+global/global (N-W) score: 1253; 73.8% identity (81.6% similar) in 267 aa overlap (1-267:1-237)
+
+               10        20        30        40        50        60
+tar    LSSFVPSQKTYPGNYGFRLGFLQSGTAKSVTCTYSPSLNKLFCQLAKTCPVQLWVDSPPP
+       .:: ::::::: :.::::::::.:::::  ::::::.:::.: ::::: ::::.::: ::
+tem    MSSSVPSQKTYQGSYGFRLGFLHSGTAKFGTCTYSPALNKMFVQLAKTVPVQLYVDSTPP
+               10        20        30        40        50        60
+
+               70        80        90       100       110       120
+tar    PGTRVRAMAIYKKLEHMTEVVRRCPHHERSSDYSDGLAPPQHLIRVEGNLRAEYLDDRNT
+       ::::::::::::. .::::::::::::::::: :::::::::::::::::::::::: ::
+tem    PGTRVRAMAIYKQSQHMTEVVRRCPHHERSSD-SDGLAPPQHLIRVEGNLRAEYLDDPNT
+               70        80        90        100       110         
+
+              130       140       150       160       170       180
+tar    FRHSVVVPYESPEIDSECTTIHYNFMCNSSCMGGMNRRPILTIITLEDSCGNLLGRNSFE
+       :::::::::: ::. :. :::...:::::::::::::::::.::::::: ::::::.:::
+tem    FRHSVVVPYEPPEVGSDYTTIYFKFMCNSSCMGGMNRRPILVIITLEDSSGNLLGRDSFE
+     120       130       140       150       160       170         
+
+              190       200       210       220       230       240
+tar    VRVCACPGRDRRTEEENLRKKGQSCPEPPPRSTKRALPTNTSSSPQPKKKPLDGEYFTLQ
+       :::::::::::::::::::::                              .::::::::
+tem    VRVCACPGRDRRTEEENLRKK-----------------------------TMDGEYFTLQ
+     180       190       200                                    210
+
+              250       260       
+tar    IRGFKRYEMFRELNDALELKDALDGRE
+       ::: .:.:.::: :.:::::::   .:
+tem    IRGRERFEQFRERNEALELKDAQATEE
+              220       230       
+

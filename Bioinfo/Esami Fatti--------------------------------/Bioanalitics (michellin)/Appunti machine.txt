@@ -1,0 +1,41 @@
+Peptide mass fingrerprinting(bottom up)
+
+2 way electroforesis
+-limit
+-improvment
+
+2 way cromatograpy
+
+MASS SPECTROMETER:
+-ionization
+-MALDI: laser on cromophoric matrix, soft, single charged
+-ESI: gold charged tip and hot nitrogen,soft, multy charged
+-FAB:atom bombardment on matrix, semihard, multy charged
+
+MASS 
+-ION TRAP
+-QUADIPOLE
+-ION TRAP
+-TOF: time of flight based on mass
+
+REFLECTOR
+refect the ions back so the ions with same m\z ratio will arrive together and improve resolution
+
+N.B. when the electron hit the detector they will generate secondary eletron
+
+
+MASS RESOLUTION: 
+-the nerrower the peaks the better the resolution,
+ using the the point at the middle of the peak
+-it depends on the calibration of the machine
+
+HYBRID INSTRUMENTS
+two mass analyzer in tandem: the first select the parent ions and then they are fragmented and sent to another mass analyzer
+
+QTOF
+spray - quadruple - collision cell - TOFù
+
+FRAGMENTATION:
+-PROTEOMICS:fragmentation camber based on a quadrupole
+
+

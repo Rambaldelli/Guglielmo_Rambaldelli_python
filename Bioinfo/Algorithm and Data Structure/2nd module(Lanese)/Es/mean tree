@@ -1,0 +1,16 @@
+def sum(t)
+	if T==empty
+		return= 0
+	else
+		return=getrootvalue(t)+sum(getleft(t))+sum(getright(t))
+
+
+	
+def counter(t)
+	if t==empty
+		return=0
+	else
+		return=1+counter(getleft(t))+counter(getright(t))
+
+def mean(t)
+	return= sum(t)\counter(t)

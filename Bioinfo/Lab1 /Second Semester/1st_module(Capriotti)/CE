@@ -1,0 +1,26 @@
+CE(combinatorial extension) ALGORITHM
+-align actameric fragments(local)
+-unite fragment
+-optimize fragment path
+-optimize: dinamic programming
+-statistics
+=> longest path on SIMILARITY MATRIX
+
+HEURISTICS(rules used to no have to calculate every possible alignment)
+-You can add a fragment to the perwious if they align without o with max one gap.
+-max gap size 30
+
+SIMILARITY MATRIX
+-RMSD
+-inter resideue distange in single fragment
+-distance between residues of two frag.
+
+STATISTICS
+-probability of obtaining better(longer or less gaps) path using a random set of non redundant structure.
+-best Z-scoring alignment are check for RMSD
+-try to relocate GAPS a bit
+-dynamic programming aptimization using obtained superimposition
+
+!LIMITATION!
+-lost topology
+-8 frag unit = not sure

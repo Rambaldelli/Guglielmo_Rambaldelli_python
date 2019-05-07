@@ -1,0 +1,31 @@
+CLASSIFICATION: LOGISTIC REGRESSION
+-classificate in int(classes)
+-from h to g(h)
+	sigmoid(logistic) function of teta^T(x) 
+	=> 1\(1+e^-(teta^t(x))) 
+-the hypotesis became the probability of the outcome
+
+DECISION BOUNDRAY
+we can use a polynomial regression with feature engeneering to get higher grade function (es. use the equation of a circle as h)
+
+COST FUNCTION 
+-standard= 1\2 (h(x)-y)
+	y=truth
+	h(x)=hypotesis
+if we use the standar cost we end up with a non convex cost function where is really hard to find a non local minimum so we need to modify the cost function to a convex(bowl shaped) one.
+=> - log(h)   if y=1
+   - log(1-h) if y=0
+
+GREDIENT DESCENT WITH NEW COST FUNCTION
+-Rewrite the cost function[J(teta)]as CROS ENTROPY
+-minimize J(teta): end up with a normal GD but with a different h 
+
+
+NOTE
+-can use feature scaling
+-can be monitored for 'improvment'
+
+MUTLICLASS-----------------------------------------------------------
+ALG: one vs all
+	-divide the problem in a series of binary classification problem
+
