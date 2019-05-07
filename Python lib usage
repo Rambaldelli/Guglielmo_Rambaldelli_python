@@ -1,0 +1,12 @@
+numpy
+	-sexy array
+	-math
+
+pandas
+	-serie
+	-dataframe
+mathplotlib
+	-graph
+
+seaborn
+	-fancy graph
