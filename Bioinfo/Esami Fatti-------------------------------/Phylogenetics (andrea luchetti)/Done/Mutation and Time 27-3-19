@@ -1,0 +1,30 @@
+MUTATION AND TIME
+If we assume a constant mutation rate we can use the genetic distance to hypotize the date of the speciation.
+
+Given that the mutation rate is not constant between lineages we need to model it.
+
+MUTATION RATE MODELLING
+-strict clock (constant rates)
+	-relative rates
+	-tajima test
+	-
+-local clock (every breanch can have different rates inipendantly)
+-autocorrelated relaxed clock (closer breanch have similar rates )
+	-random on normal distribution of parent
+-general relaxed clock (different rates based on a global distribution)
+	-random on a distribution
+
+	N.B.:NON PARAMETRIC RATES SMOTHING
+	User defined philogeny
+
+CALIBRATING
+-fossil
+	-give min age
+	
+	-distribution
+		-lognormal
+		-exponential
+		-normal
+		-uniform (usual for root of tree: no idea of age)
+-biogeagraphy (splitting of lend)
+

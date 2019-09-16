@@ -1,0 +1,27 @@
+BURROWS WHELLERS TRANSFORM--------------------------------------------------------
+-append $ at the end of the string
+-generate all the cyclic shift
+-sort them
+-take the string made by the last character of the ordered cyclic shift
+
+OPPOSITE
+-prepend trasform to transform
+-sort
+-repeat
+-take string ending in $
+
+LF MAPPING
+The i-th occurrence of a character x in the last column corresponds to the i-th occurrence of a character x in the first column
+
+PROBLEM:SERCH A QUERY STRING O(n)
+-Find the range of “c”s in the first column
+-Look at the samerange in the last column
+-Let “n” be the next character (i.e. thatpreceding “c” in S)Set B = the LF mapping entry for “n” in the first row of the range  Set E = the LF mapping entry for “n” in the last + 1 row of the range
+-Find the range for “n” in the first column, and use B and E to findthe right subrangewithin the “n” range
+
+COMPRESSION---------------------------------------------------------------------------------------------------
+-take BTW
+-move to front
+-replace run of 0 with count of 0
+-apply huffman
+	

@@ -1,0 +1,16 @@
+LOCAL SEARCH 
+You know a solution, you look for a better solution in the neighborhood.
+
+N.B: find a local optimum but if we prove that the local is also the global it is ok.
+
+EXEMPLE: LOCAL SEARCH FOR MINIMUM SPANNING TREE [REALLY SLOW]-------------------------------------------
+NEIGHBORHOOD: add an edge and delete a different edge from the crated circle.
+
+
+EXEMPLE: SORTING--------------------------------------------------------------------
+-consider all permutation
+-for each of them the neighborhood are all the equals permutation with just one element moved
+-find the one with least inversion in the order
+
+
+

@@ -1,0 +1,42 @@
+ANNOTATION:Add to a string a series of functional end structural information.
+ASSEMBLY: fragment that have been intergratet together via an algorythm
+
+50% of proteine are enzymes
+
+DSSP: program, use PDB file and add secondari chains to the beackbone of the protein 
+because we cant see the hydrogen atoms in then cristallization of the protein
+
+RESOLUTION: it is a problem only for x ray cristallography not for NMR 
+and it is the precision with  wich we can put electron density on the molecule
+
+PDB: contein the redution of the data taken from the electron density[CONTEINS A REDUCED RAPRESSENTATION OF THE PROTEIN STRUCTURE]
+
+SIGNAL PEPTIDE: N-terminal sequence of a protein that will be cleaved on maturation
+
+
+
+
+CLUSTERING: define rules to compare(allignment) our data in cluster
+-SCOP classification: clustering rule based on secondary structure
+-PROTEIN FAMILY: protein with the same fold and same funcion (not sequence) in different organism and supermiposible
+ 
+N.B cluster the archive to find there are protein superimposible in terms of structure and can be devided in family and usually protein with the same structure have the same function
+
+ALIGNMENT: superimpose(tagret to template) to protein\sequence and calculate the RMSD. (2-3 A is the max) and we can mesure the IDENTITY number of residues in the same position %
+Sequence alignment is validated by structure alignment.
+
+N.B: lower is the identity(al least 30%), we need more aligned residues(at least 200) to say that there is a structure similarity => stucture and function are more conserved than sequence.
+DISTANTLY RALATED OMOLOGUE: same protein family but identity below 30%
+
+UTILITY: if we create a FAMILY of protein of wich i know the function(template) then i can say that if i have(target) 30% identity and 250 residues probably they have similar function.
+[See 'evolution did it graph' and 'pairwise alignment experiment in PDB']
+
+
+
+
+
+
+
+
+
+

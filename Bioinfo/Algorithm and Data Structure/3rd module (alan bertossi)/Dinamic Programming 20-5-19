@@ -1,0 +1,79 @@
+DIVIDE AND CONQUER
+-recursive
+-top down
+-GOOD: if subproblem:
+	-independant
+	-balanced
+
+DYNAMIC PROGRAMMING
+-iterative
+-bottom up
+-GOOD: common subproblem
+
+WHEN TO BE USED
+	-optimization problem
+	-optimal substructure: optimal solution contain the optimal solution to subproblems (proven recursively)
+	-repeated subproblem
+	-polynomial time
+		-number of subproblem= polynomial
+		-deriving solution from subproblem= polynomial
+
+
+EXAMPLE: LONGEST COMMON SUBSEQUENCE [O(n*m)]-------------------------------------------
+Find the longest common subsequence between two string (no coninuity required)
+
+Given sequence S characterize Sn the prefix of lenght n:
+	-S0 = empty
+	-S3 = first three character
+	
+MATRIX D recursive function
+d[i,j]:
+0			i=0 and j=0
+D(i-1,j-1)+1		i>0 and j>0 and p=t
+max[D(i-1,j),D(i,j-1)]	i>0 and i>0 and p!=t
+
+N.B.: if we just want the lenght ofthe solution and not the path all the computation can be done with just two rows(overwriting each time)
+
+EXAMPLE:APROXIMATE STRING MATCH [O(n*m)]-----------------------------------------------
+ERRORS:
+k-approssimate occurences: we accept some errors between the two string
+	-substitution
+	-insertion
+	-deletion
+	-correct
+
+MATRIX D recursive function
+d[i,j]:
+o						if i = 0
+i						if j = 0
+min(D[i-1.,j-1]+g, D(i,j-1)+1, D(i-1,j)+1)	else
+
+start to MIN
+
+
+EXAMPLE: LONGEST COMMON SUBSTRING [O(n*m)]-------------------------------------------
+
+MATRIX D recursive function
+d[i,j]:
+o		if pt != tj
+D[i-1,j-1]+1	if pi = tj
+
+
+EXAMPLE: EDIT DISTANCE [O(n*m)] --------------------------------------------------
+Minimum number of editing totrasform one string to another
+
+MATRIX D recursive function
+d[i,j]:
+j						if i = 0
+i						if j = 0
+min(D[i-1.,j-1]+g, D(i,j-1)+1, D(i-1,j)+1)	else
+
+start to LAST
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+# bin/glsearch36 -E 10.0 -f -12 -g -2 28162.1.seq 28162.2.seq
+GLSEARCH performs a global-query/local-library search
+ version 36.3.5e Nov, 2012(preload8)
+Query: 28162.1.seq
+  1>>>tem 200 bp - 200 aa
+Library: 28162.2.seq
+      201 residues in     1 sequences
+
+Statistics: (shuffled [500]) Unscaled normal statistics: mu= -35.5720  var=336.0329 Ztrim: 0
+ statistics sampled from 1 (1) to 500 sequences
+Algorithm: Global/Local affine Needleman-Wunsch (SSE2, Michael Farrar 2010) (6.0 April 2007)
+Parameters: BL50 matrix (15:-5), open/ext: -12/-2
+ Scan time:  0.010
+
+The best scores are:                                      n-w bits E(1)
+tar 201 bp                                         ( 201) 1268 147.7       0
+
+>>tar 201 bp                                              (201 aa)
+ n-w opt: 1268  Z-score: 761.1  bits: 147.7 E(1):    0
+global/local score: 1268; 90.5% identity (95.5% similar) in 201 aa overlap (1-200:1-201)
+
+               10        20        30        40        50        60
+tem    PLSSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALNKMFCQLAKTCPVQLWVDSTP
+       :::: ::::::: :.::::::::.:::::::::::::.:::.:::::::::::::::: :
+tar    PLSSFVPSQKTYPGNYGFRLGFLQSGTAKSVTCTYSPSLNKLFCQLAKTCPVQLWVDSPP
+               10        20        30        40        50        60
+
+               70        80        90        100       110         
+tem    PPGTRVRAMAIYKQSQHMTEVVRRCPHHERCSD-SDGLAPPQHLIRVEGNLRVEYLDDRN
+       :::::::::::::. .:::::::::::::: :: ::::::::::::::::::.:::::::
+tar    PPGTRVRAMAIYKKLEHMTEVVRRCPHHERSSDYSDGLAPPQHLIRVEGNLRAEYLDDRN
+               70        80        90       100       110       120
+
+     120       130       140       150       160       170         
+tem    TFRHSVVVPYEPPEVGSDCTTIHYNYMCNSSCMGGMNRRPILTIITLEDSSGNLLGRNSF
+       ::::::::::: ::. :.:::::::.:::::::::::::::::::::::: :::::::::
+tar    TFRHSVVVPYESPEIDSECTTIHYNFMCNSSCMGGMNRRPILTIITLEDSCGNLLGRNSF
+              130       140       150       160       170       180
+
+     180       190       200
+tem    EVRVCACPGRDRRTEEENLRK
+       :::::::::::::::::::::
+tar    EVRVCACPGRDRRTEEENLRK
+              190       200 
+
+
+
+200 residues in 1 query   sequences
+201 residues in 1 library sequences
+ Tcomplib [36.3.5e Nov, 2012(preload8)] (4 proc in memory [0G])
+ start: Sun Feb  3 17:44:27 2019 done: Sun Feb  3 17:44:27 2019
+ Total Scan time:  0.010 Total Display time:  0.000
+
+Function used was GLSEARCH [36.3.5e Nov, 2012(preload8)]

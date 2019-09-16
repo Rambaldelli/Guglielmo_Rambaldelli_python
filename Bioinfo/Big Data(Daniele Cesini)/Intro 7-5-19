@@ -1,0 +1,36 @@
+BIG DATA
+	variety 
+	velocity
+	volume
+	veracity: can be trusted?
+
+ANALITICS
+	-descriptive
+	-predictive
+	-presriptive: how to deal with?
+
+FLOPS: floating point operation per second
+IOPS: input outpu operation per second
+
+PC OR DATACENTER
+-computing
+-storage
+-networking
+-cooling and supply
+
+CPU:
+	-computing power: frequency * core * vector registry = GigaFlops
+
+HARD DRIVE(few powerfull cores):
+	-HD:  BANDWITH 	 150mb\s 	IOPS: 100-200
+	-SSD: BANDWITH	 500mb\s	IOPS: 100k-200k
+	-NVM: BANDWITH	 2000-4000	IOPS: 5-17M
+	-TAPE:BANDWITH	 250mb\s	IOPS: just one 
+
+GPU(a lot of bad cores):
+	-TFLOPS: 0.5-7 
+
+NETWORK:
+	-ethernet:	BANDWITH:10mb\s to 1gb\s	LATENCY: 50-150 microsecond
+	-infiniband:	BANDWITH:QDR,FDR,EDR:1gb\s	LATENCY: <1ms			=> good for parallel processing
+

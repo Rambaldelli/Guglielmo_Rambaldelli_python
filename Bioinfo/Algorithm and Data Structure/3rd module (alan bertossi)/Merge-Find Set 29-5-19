@@ -1,0 +1,75 @@
+MERGE-FIND SET (union-find)----------------------------------------------------------------------------
+-divide data in subset
+-disjointed subset
+-one rappresentative per subset
+
+-rappresented as FOREST
+	-each subset is a tree
+		-root: rappresentative
+		-root: parent of self
+
+RANK (of X): height of the subtree roted in X => upper bound
+N.B:
+	-updated on merge() and create()
+	-NOT updated on find() and so path compression
+
+OPERATION
+-create forest (of just root)[O(n)]
+-find best set for element (start from X untill root is found)[O(n)]
+-unite set (the rappresentative became one of the two prewious one)(one root point to another)[O(1)]
+	-GOOD PRACTICE: use the lower tree as the new child of the taller
+
+--PATH COMPRESSION--
+When we do a find() reasign all the node we go trought as a direct child of root => next find() [O(1)]
+
+PSEUDOCODE-----------------------------------------------------------
+p=parent=[]
+r=rango=[]
+
+MFset(n):
+	t.parent=[1..n]
+	t.rango=[1..n]
+	for i to n
+		t.parent[i]=i
+		t.rango[i]=0
+	return t
+
+find(x):                              +path compression
+	if p[x]!=x:
+		p[x]=find(p[x])
+	return p[x]
+
+merge(x,y):
+	rx=find(x)
+	ry=find(y)
+	if rx!=ry:
+		if r[rx]>r[ry]:
+			p[ry]=rx
+		elif r[ry]>r[rx]:
+			p[rx]=ry
+		else
+			p[rx]=ry
+			r[ry]=r[ry]+1
+
+TIME COMPLEXITY
+-tree+rank: O(logN)
+-tree+rank+compression: O(1) amortized(mean over all worst case)
+
+MF to FIND CONNECTED COMPONENET of a Graph [O(edges+node) with compression]-----------------------------------------------------------------
+-merge for each edge of the graph
+-the final MFset give the connected componenet
+	-connected
+	-maximal
+
+PSEUDOCODE-------------------------
+CC(graph G):
+	MFset= MFset(G.V)
+	for each u of G.V:
+		for each v of G
+			M.merge(u,v)
+	return M
+
+
+
+
+

@@ -1,0 +1,30 @@
+Relation between identity and aligned residue: 30% ID with 200 residues => structural identity
+
+SUBSTITUTION MATRIX(210 different substitutio value based on known data and a value of D (gaps)):
+-PAM(250): based on global alignment, work for evolutionary similar sequence
+-BLOSUM(63): based on local aligment, work for evolutionary different sequence
+
+GAPS: 
+-LINEAR: additive cost for all gaps
+-AFFINE: first high cost than linear increase
+
+TYPE:
+-GLOBAL: NW
+-GLOBAL WITHOUT END GAPS: NW with 0 and no end point or penalty
+-LOCAL: SW Same but instead of negative value put 0 and restart(so look for the best score 0n all the matrix)
+-AFFINE GAPS: Gotoh
+
+EXTREME VALUE DISTRIBUTION:
+ exp(-exp([x-Delta]/Beta))
+P value= 1 - cumulative
+
+E-VALUE
+P-value=1-exp(-E-value)
+
+SIMILARITY SEARCH(not optimal aligment):
+HIPOTESIS: if two sequence have identity share similar groups.
+-FASTA look for 2-6 lecters word 
+-BLAST: dictionary of all 3 lecters word in the sequence(based on extreme value statistics)
+
+
+

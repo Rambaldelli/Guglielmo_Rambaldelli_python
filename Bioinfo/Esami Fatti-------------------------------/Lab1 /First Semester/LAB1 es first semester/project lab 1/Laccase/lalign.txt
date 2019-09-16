@@ -1,0 +1,84 @@
+# bin/ggsearch36 -E 10.0 -f -12 -g -2 28544.1.seq 28544.2.seq
+GGSEARCH performs a global/global database searches
+ version 36.3.5e Nov, 2012(preload8)
+Query: 28544.1.seq
+  1>>>1gyc 499 bp - 499 aa
+Library: 28544.2.seq
+      513 residues in     1 sequences
+
+Statistics: (shuffled [500]) Unscaled normal statistics: mu= -129.4060  var=948.9310 Ztrim: 0
+ statistics sampled from 1 (1) to 500 sequences
+Algorithm: Global/Global affine Needleman-Wunsch (SSE2, Michael Farrar 2010) (6.0 April 2007)
+Parameters: BL50 matrix (15:-5), open/ext: -12/-2
+ Scan time:  0.030
+
+The best scores are:                                      n-w bits E(1)
+sE 513 bp                                          ( 513) 2085 151.8       0
+
+>>sE 513 bp                                               (513 aa)
+ n-w opt: 2085  Z-score: 768.9  bits: 151.8 E(1):    0
+global/global (N-W) score: 2085; 59.0% identity (79.7% similar) in 517 aa overlap (1-499:1-513)
+
+               10        20        30        40        50        60
+1gyc   AIGPAASLVVANAPVSPDGFLRDAIVVNGVFPSPLITGKKGDRFQLNVVDTLTNHTMLKS
+       .::: ..: .::  ..:::: :.:....: .:.::: :. :::::.:::. :.. .:  .
+sE     SIGPRGTLNIANEVIKPDGFSRSAVLAGGSYPGPLIKGETGDRFQINVVNKLADTSMPVD
+               10        20        30        40        50        60
+
+               70        80        90       100       110       120
+1gyc   TSIHWHGFFQAGTNWADGPAFVNQCPIASGHSFLYDFHVPDQAGTFWYHSHLSTQYCDGL
+       :::::::.:  : :::::::.:.::::. ::::::::..:::::::::::::.:::::::
+sE     TSIHWHGIFVRGHNWADGPAMVTQCPIVPGHSFLYDFEIPDQAGTFWYHSHLGTQYCDGL
+               70        80        90       100       110       120
+
+              130       140       150       160       170       180
+1gyc   RGPFVVYDPKDPHASRYDVDNESTVITLTDWYHTAARLGPRFPLGADATLINGLGRSAST
+       :::::::. .:::   ::::.::::.:. ::::. .      :   :.::.:::::: . 
+sE     RGPFVVYSKNDPHKRLYDVDDESTVLTVGDWYHAPSLSLSGVP-HPDSTLFNGLGRSLNG
+              130       140       150       160        170         
+
+              190       200       210       220       230       240
+1gyc   PTAALAVINVQHGKRYRFRLVSISCDPNYTFSIDGHNLTVIEVDGINSQPLLVDSIQIFA
+       :.. : :.:: .:::::.::.. ::: :: :::::: .::::.:: :.::: ::..::::
+sE     PASPLYVMNVVKGKRYRIRLINTSCDSNYQFSIDGHAFTVIEADGENTQPLQVDQVQIFA
+     180       190       200       210       220       230         
+
+              250       260       270       280       290       300
+1gyc   AQRYSFVLNANQTVGNYWIRANPNFGTVGFAGGINSAILRYQGAPVAEPTTTQTTSVIPL
+       .::::.::::::.::::::::::: :  :::. .:::::::.::  ..::: . ... ::
+sE     GQRYSLVLNANQAVGNYWIRANPNSGDPGFANQMNSAILRYKGARNVDPTTPERNATNPL
+     240       250       260       270       280       290         
+
+              310       320       330         340       350        
+1gyc   IETNLHPLARMPVPGSPTPGGVDKALNLAFNFNGTN--FFINNASFTPPTVPVLLQILSG
+        : ::.:: . :.::.: :::.:. .:: : :. ..  :  :: .:.:::::::::::::
+sE     REYNLRPLIKEPAPGKPFPGGADHNINLNFAFDPATVLFTANNYTFVPPTVPVLLQILSG
+     300       310       320       330       340       350         
+
+      360       370       380       390       400       410        
+1gyc   AQTAQDLLPAGSVYPLPAHSTIEITLPATALAPGAPHPFHLHGHAFAVVRSAGSTTYNYN
+       .. :.:: ::::.: .   ...:.:.:: ..:  .:::.:::::.:::::::::.::::.
+sE     TRDAHDLAPAGSIYDIKLGDVVEVTMPALVFA--GPHPMHLHGHSFAVVRSAGSSTYNYE
+     360       370       380       390         400       410       
+
+      420       430       440       450       460       470        
+1gyc   DPIFRDVVSTGTPAAGDNVTIRFQTDNPGPWFLHCHIDFHLEAGFAIVFAEDVADVKAAN
+       .:. ::::: :   . ::::::: .:: ::::::::::.::. :::.:::: : .. .::
+sE     NPVRRDVVSIGDDPT-DNVTIRFVADNAGPWFLHCHIDWHLDLGFAVVFAEGVNQTAVAN
+       420       430        440       450       460       470      
+
+      480       490                         
+1gyc   PVPKAWSDLCPIYDGLSEAN----------------Q
+       :::.::.::::::.. . ..                 
+sE     PVPEAWNDLCPIYNSSNPSKLLMGTNAIGRLHAPLKA
+        480       490       500       510   
+
+
+
+499 residues in 1 query   sequences
+513 residues in 1 library sequences
+ Tcomplib [36.3.5e Nov, 2012(preload8)] (4 proc in memory [0G])
+ start: Mon Dec 10 17:13:48 2018 done: Mon Dec 10 17:13:48 2018
+ Total Scan time:  0.030 Total Display time:  0.010
+
+Function used was GGSEARCH [36.3.5e Nov, 2012(preload8)]

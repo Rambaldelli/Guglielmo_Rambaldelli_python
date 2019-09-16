@@ -1,0 +1,31 @@
+EXAM: NOV start
+
+
+BASICS:
+-binomial dist
+-normal dist
+
+-z test, t test , anova
+-chi square
+-pearson
+-spearman
+-fisher
+-bonferroni
+
+-sign test
+-wilcoxon
+
+-pca
+
+-CLASSIFICATION
+-supervised
+	-neural net
+	-HMM
+	-support vector
+	-random forest
+	-conditional random fields
+-unsupervised
+	-hierarchical clustering
+	-partitional (k means)
+	-gaussian
+	-self organizing maps

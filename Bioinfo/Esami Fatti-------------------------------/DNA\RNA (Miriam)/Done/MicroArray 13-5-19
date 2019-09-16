@@ -1,0 +1,25 @@
+VARIABILITY COEFFICENT
+CV% : std / mean * 100   (((possible question to the exam)))
+
+
+MICROARRAYS
+Tiling arrays
+The probes are able to cover all the entire genome. but also others kind of microarrays exist like the one with protein (antibody)
+
+Transcriptomics arrays -> there exist different types of gene expression micro arrays:
+competitive/two-color
+not competitive/one-color
+Another useful technology is the beadchip (a trademark of Illumina, ideal for DNA methylation analysis) the practical lessons will be focused on this one.
+
+PROCEDURE
+-Background correction
+-Cy3-Cy5 intra-array normalisation
+-Normalisation procedure among different arrays
+	-scaling: so that you obtain the mean equal zero. subtract the mean log ratio for each log ratio in order to obtain the mean equal zero. find the MAD: median of absolute deviation
+	-centering: you have SD equal 1 (and mean equal zero). i subtracted the mean and divided for the standard deviation. 
+	-normalization of the distribution: in order to make the minimum and maximum equal (we are talking about the distribution of fluorescence ). the the lowest data from a slide and substituting it for an average value of all the lowest data from all the slides. then take the second lowest data of the same slide and substitute it with the average value of all the second lowest data for each slide...an so on...
+-Filtering
+-raw data output
+
+
+

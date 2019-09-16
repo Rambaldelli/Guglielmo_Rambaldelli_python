@@ -1,0 +1,14 @@
+INFRASTRUCTURE AS CODE
+-combine everything into config. file
+
+SERVERLESS TECH(FaaS).
+-no pre allocation(just run the code)
+-automatized run condition
+-stateless microservices
+-TEMPLATING LANGUAGE(ask for a specific cloud configuration)[es. TOSCA]
+
+
+-SERVICES COMPOSITION [es. DODAS]
+	-on demand system
+	-opportunistic computing
+	-elestic extension

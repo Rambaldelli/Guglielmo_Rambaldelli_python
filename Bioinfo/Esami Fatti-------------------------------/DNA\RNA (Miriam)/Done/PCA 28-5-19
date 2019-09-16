@@ -1,0 +1,19 @@
+PCA (principal component analysis)
+-trasformation that put the data in a way to show the highest variances among them.
+-we can know what % of variance is shown in each axis after trasformation.
+-we can use it to see similarity not immediatly visible.
+-we have to chose the number of component we want\need to express as much variance as we want.
+
+N.B.: we can use another test to select only the significant data and than apply PCA only to them.
+
+SCREE PLOT
+-show the % of variance shown by each component
+
+VOLCAN PLOT
+P-value \ fold changes
+	-divide by over\under expressed
+
+---------DAVID--------------
+enrichment of GO terms database
+
+

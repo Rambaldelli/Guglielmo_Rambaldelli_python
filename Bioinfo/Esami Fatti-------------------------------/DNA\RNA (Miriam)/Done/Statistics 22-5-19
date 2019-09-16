@@ -1,0 +1,113 @@
+--STATISTICS--:
+-------------PAIRED
+	-NORMAL: T-student paired
+	-NOT NORMAL: Wilcoxon rank test
+-------------UNPAIRED
+	-NORMAL: T-student unpaired
+	-NOT NORMAL: Mann-Whitney U test
+
+VARIANCE TEST---------
+-compare more than 2 dataset
+
+-----------PARAMETRIC
+ANOVA TEST
+	-ONE WAY
+	-TWO WAY
+
+-----------NON PARAMETRIC
+Kruskal-Wallis Test
+
+
+
+Shapiro–Wilk test: says if data fit in a normal distribution
+
+ERROR
+ALPHA(1): reject TRUE NULL hypotesis
+BETA(2): accept FALSE NULL hypotesis
+N.B.: We set alpha (usually 0.05,0.01) and accept the null H if P-value is higher than alpha
+	-LOW alpha: less false discovery rate => more beta error
+	-HIGH alpha: => more alpha error
+
+BOOTSTRAP ANALYSIS------------------------------------------------
+Resample the data using different cluster and repeat the analysis
+
+MULTIPLE TEST CORRECTION-----------------------------------------
+-BONFERRONI CORRECTION: P-value \ number of test
+	-really stringent
+
+-BENJAMIN-HOCHBERG CORRECTION (Q): q = i/m*Q
+	-less stringent 
+
+i= the individual p-value’s rank
+m = total number of tests 
+Q = the false discovery rate (a percentage, chosen by you)
+
+
+
+
+------------------METHODS----------------------------------------------------------------
+PARAMETRIC vs NON PARAMETRIC STATISTICS
+-paramtric
+	-more assumption
+		-indipendence
+		-normal distribution
+		-uniform variance
+	-more powerfull
+	-need predictable distribution
+-non par
+	-good median rappresentation
+	-small data
+	-outliers
+
+LOG VS UNLOG
+UNlog data are more robust to outliers but less powerfull.
+
+-----------PARAMETRIC------------
+EXPERIMENTAL DESIGN
+-paired(not indipendent) vs unpaired (independent variables)
+
+
+T-STUDENT (change based on the degree of freedom)
+-paired: use as data the difference between the data => we obtain only one distribution of the differences (freedom n-1)
+-unpaired: need same sample size and variance => compare mean and error of two distribution (freedom 2n -2 )
+
+WELCH TEST
+modified T-student for unequal variance\ sample size
+	-need a degree of freedom correction
+	
+-----------NON PARAMETRIC----------
+WILCOXON SIGN RANK TEST (freedom: n(n+1)/2)
+	-same as paired t-student
+	-not normal distributed
+	-trasform log ration in ranks => compare sum (rank * sign of data in that rank) to W (wilcoxon) distribution
+		-in case of parity we put as a rank the mean of the two for bot datas
+			-W>critical value => null H is correct
+
+MANN-WITHNEY U TEST
+	-rank test for unpaired non normal data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+ILLUMINA BIT CHIP: INFINIUM 1 AND 2 (in the same chip)
+methilated and unmethilated beads
+	-check the same CpG that can be bot methilated or not
+		-meth-meth: use guanin to recognize citosine
+
+CYTOSINE
+	-meth: G => red
+	-unmeth: A => green
+
+BETHA VALUE: total intensity= intM \ (intU + intM + 100)

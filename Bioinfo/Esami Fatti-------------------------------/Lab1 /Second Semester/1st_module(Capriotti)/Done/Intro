@@ -1,0 +1,44 @@
+-protein more conseved than  sequence
+-if high identity can transfer structure
+
+MAIN GRAPH
+% residues in core \ seq ID => exponential => more ID = more residues in common core (60 % almost sure alignment)
+RMSD \ seq ID => more ID = lower RMSD (60 % = RMSD lower than 1)
+seq ID \ lenght of alignment => evolution did it!
+
+REMOTE HOMOLOGS
+-low ID
+-Similar structure
+
+TWILIGHT ZONE
+20 % id => 90 % of alignment are homologous( below 25% only 10 are homologous)
+	30< safe
+	20<30 twiglight : be cautious
+	20> midnight : false positive
+
+STRUCTURE ALIGNMENT
+-corrispondence set (NP-hard)
+-alignment transformation (O(n))
+
+treshold 3.5 A because is distance between Calphas
+
+THEORETICAL METHOD
+-define unit
+-algorithm with minimal distance
+-verify significance
+
+JACCARD DISTANCE (used to calculate distance between function: GO terms)
+Between two groups is the intersection devided the union.
+
+
+
+
+
+
+
+
+
+
+
+
+

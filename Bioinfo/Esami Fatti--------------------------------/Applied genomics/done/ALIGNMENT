@@ -1,8 +1,0 @@
-SNP:single nucleotide polimorfism(%)
-SNV:single nucleotide variance
--homozigous(all the reads give same result)
--heterozigous(reads give two different result for that nucleotide[maybe duplicate reads problem so at least 3 reads per type])
-
-N.B: we can be only sure of heterozigous reads but we cant be sure of homozaigous because of chance, but higher depth give us higher confidence.
-
-SIFT: gravity of a specific SNP

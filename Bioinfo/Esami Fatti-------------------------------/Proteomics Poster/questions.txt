@@ -1,0 +1,79 @@
+Possible  exam  questions  (1  to  9  were  explicitly  mentioned  by  the  professor,  the  rest  are  questions  of  similar  type  based  on  the  slides)
+
+1.What  is  2D  PAGE,  how  does  it  work,  what  do  you  typically  do  after  2D  PAGE?
+2.What  is  peptide  mass  fingerprinting?
+3.Why  it  trypsin  so  commonly  used  for  in-gel  digestion?  What  is  its  specificity?
+4.How  does  a  typical  MS  spectrum  look  like?  What  are  the  axes?  Is  intensity  always  related  to  the  abundance?
+5.What  is  the  difference  between  molecular  ions  and  fragment  ions?
+6.What  ionization  sources  are  used  in  proteomics?
+7.What  are  multiply  charged  ions?  What  is  ESI?  What  is  MALDI?  Do  they  produce  multiply  charged  ions?
+8.What  is  the  STRING  database?
+9.What  is  the  difference  between  top-down,  bottom-up  and  shotgun  approaches  inproteomics?
+10.What  is  western  blotting?  Why  do  we  use  it?
+11.What  mass  analyzers  are  used  in  mass  spectrometry?
+12.What  is  the  difference  between  positive  and  negative  ion  modes  in  MALDI  and  ESI?  How  do  we  decide  which  mode  to  use?
+13.What  is  peptide  de  novo  sequencing?  What  are  the  two  main  fragmentation  methods  used?
+14.What  is  the  aim  of  a  quantitative  proteomics  experiment?  Why  do  we  perform  quantitative  proteomics  experiments?  15.What  are  the  strategies  for  quantitative  proteomics?
+16.What  are  SILAC  and  ICAT?  What  does  a  typical  spectrum  of  SILAC  look  like?    What  are  the  pros  and  cons  of  these  methods  compared  to  each  other?
+17.How  does  label-free  quantitative  proteomics  work?  Which  are  the  two  types  of  quantification?  What  are  the  pros  and  cons  of  this  method?
+18.What  is  MALDI  imaging?
+19.What  is  SELDI?
+20.What  are  the  experimental  approaches  to  study  protein-protein  interactions  in  vivo  and  in  vitro?
+21.What  is  the  principle  of  yeast  two-hybrid  system?
+22.What  is  the  difference  between  yeast  two-hybrid  system  and  mammalian  two-hybrid  system?  How  do  we  decide  which  one  to  use?
+23.What  is  the  principle  of  GST  pull-down  assays?
+24.What  is  the  principle  of  co-immunoprecipitation?
+25.What  are  protein  arrays?  What  are  their  advantages  and  disadvantages  compared  to  other  experimental  methods  for  studying  protein-protein  interactions?
+26.What  is  the  idea  behind  phage  display?
+27.What  are  resonance  energy  transfer-based  techniques?  What  is  the  difference  between  FRET  and  BRET?
+28.What  are  protein  complementation  assays?  What  enzymes  are  used  in  this  method?
+29.Why  is  it  useful  to  perform  non-invasive  in  vivo  imaging?  What  experimental  methods  are  used?  What  is  BLI?
+30.How  do  computational  methods  to  predict  protein  interactions  work?  What  are  the  databases  used?  
+
+Key  abbreviations
+2D-PAGE    Two-dimensional  polyacrylamide  gel  electrophoresis
+BLI    Bioluminescence  imaging
+BRET    Bioluminescence  resonance  energy  transfer
+CID    Collision-induced  dissociation
+DIGE    Difference  gel  electrophoresis
+ELISA    Enzyme-linked  immuno  sorbent  assay
+ESI    Electrospray  ionization
+ETD    Electron-transfer  dissociation
+FRET    Fluorescence  resonance  energy  transfer
+GC Gel  chromatography
+HPLC    High-performance  liquid  chromatography
+ICAT    Isotope-coded  affinity  tags
+iTRAQ    Isobaric  tag  for  relative  and  absolute  quantification
+MALDI    Matrix-assisted  laser  desorption/ionization
+MSMass  spectrometry
+MS/MS    Tandem  mass  spectrometry
+PTM    Post-translational  modification
+PCA    Protein-fragment  complementation  assay
+QD-BRET    Quantum  dot/BRET  (or  Self-illuminating  quantum  dots) 
+Q-TOF    Quadrupole  time-of-flight  mass  spectrometry
+SDS-PAGE    Sodium  dodecyl  sulfate  polyacrylamide  gel  electrophoresis
+SELDI    Surface-enhanced  laser  desorption/ionization
+SILAC    Stable  isotope  labeling  with  amino  acids  in  cell  culture
+TOF    Time-of-flight  mass  spectrometry
+IEF    Isoelectric  focusing
+
+
+
+During presentatin:
+- ionisation (step of Mass spectrometry)
+- 2d gel electrophoresys (main limitation)
+- PPi methods (I started with 2 yeast hybrib and she asked me the limitations of this tenchnic)
+- Common steps after 2D-PAGE. Previous steps before performing MS (spot cutting, digestion…)
+- PHAGE display technology
+- shotgun proteomics (diff with bottom-up)
+- mass fingerprinting
+- FRET BRET (energy transfer)
+- 
+limitations!
+
+
+SILAC  and  ICAT?
+iTRAQ 
+
+
+

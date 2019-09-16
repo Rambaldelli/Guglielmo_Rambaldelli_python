@@ -1,0 +1,91 @@
+METHILATION 
+It is calculated as a mean of the methilation status of a pool of cell. (N.B. two alleles) 
+
+ISLAND: 
+	-CG > 50%
+	-200 bp
+	-observed / expected > 0.6
+SHORE:
+	-0-2 kbp around
+SHELVES
+	-2-4 kbp around
+
+CHIPS---------------------------------------
+12 sample
+14 beads for each sequence
+
+BISULFITE
+metC -> C -> C 
+C -> U -> T
+
+HYBRIDIZE
+	-INFINIUM 1: high frequency region	
+		-2 probes 
+		-one color
+	-INFINIUM 2: low frequency region
+		-one probe
+		-two colors
+
+SINGLE BASE EXTENSION
+	-C,G: green
+	-A,T: red
+
+450K ILLUMINA CHIP
+	-486428 probes
+	-65 SNP
+	-850 control probe
+
+PIPELINE------------------------------------
+1. Import raw data files
+2. Quality checks and probe filtering
+3. Background correction and normalization
+4. Batch effects
+5. Differential methylation
+6. Biological interpretation
+
+CORRECTION AND NORMALIZATION-----------------------------------
+-background
+	-use the control probes
+	-NOOB: use the wrong color in type 1 probes (OOB) as background (BETTER)
+
+-peak (between type 1 and 2 probes) (less tecnical variation)
+	-not so safe on real data
+
+-quantile
+	-replace value with mean of all sample in the same rank
+	-N.B.: assume that the beta value between sample are similar between sample and that the error are due to tecnical problem
+
+	-can also be used to normalize type 1 and 2 probes
+
+-subset quantile normalization(avoid to normalize to different distribution)
+	-SWAN: based on GpC content of subset
+	-SQN: based on the region where the subset map
+
+-functional normalization
+	-applied on the out of band(wrong color inf1) probes
+
+M VS BETA VALUES--------------------------------------
+-BETA(percentage of methilation in each position): heteroschedastic
+-M(log version of beta): homoschedastic (better for small[4-5 sample] set)
+
+ANALYSIS-------------------------------------------------------
+PARAMETRIC VS NON PARAMETRIC TEST
+	-SMALL DATASET
+		-non par. = 
+		-par. = 
+	-LARGE TEST
+		-same results
+
+DMP and DMR
+Differentialy meth probes and differentialy meth REGION(a lot more relevant).
+ES. GSEA: look if sampe share concordance in the meth regions.
+
+
+MULTIPLE TEST CORRECTION-----------------------------------------
+FWER(es. bonferroni)
+	-probability of one false positive in m test: 1-(1-a)^m  -> divide treshold by the number of test
+FDR(es. benjamin-hocberg)
+	-consider the rank  ->  a^(k\m)
+
+
+

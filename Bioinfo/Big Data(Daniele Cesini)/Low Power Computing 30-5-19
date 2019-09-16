@@ -1,0 +1,34 @@
+-vector
+-microprocessor
+-system on chip
+
+SoCs: low power system on chip
+	-smartphone
+	-embedded system
+
+Increasing the power = more consumption 
+	-1GW = 1 pflop 2015
+	-13MW = 200pflop now => 100gflop\wat
+
+CHERACTERISTICS
+-low ram
+-low consumption
+
+IoT: internet of thing
+	-network of devices that is connected to a cloud.
+
+
+FOG\EDGE COMPUTING
+-data processed locally EDGE (no need to send all to cloud)
+-data already processed sent to cloud
+-can process both locally and in the fog
+
+-EDGE
+	-collect data
+	-process locally
+	-send to cloud
+
+-FOG
+	-collect data
+	-process in fog(multiple decentralized server)
+	-send to cloud

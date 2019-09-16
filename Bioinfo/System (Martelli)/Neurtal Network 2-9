@@ -1,0 +1,112 @@
+
+
+# NEURAL NETWORK
+
+DEF: computational system that with many simple units connected perform complex computation
+
+### BIO SEQUENCES
+
+N.B.: every input should be a number, in case of sequence the given number **MUST** have a meaning.
+
+​	-the common used one is **ONE HOT**
+
+
+
+MARCH BAND: neighboring inhibition in retinal neuron enhance the contrast on borders
+
+--------------------------------
+**McCulloch and Pitts NEURONS:**
+-activation signal: weighted sum of input - threshold of neuron
+-transfer function: transform the activation signal in the output (N.B.: good to be derivable)
+	-linear
+	-step wise
+	-sigmoid: g(a) = 1 \ (1 + e^-a)		-> non deep NN
+	-rectified linear units (RiLU) 		-> deep NN
+
+THRESHOLD:
+consider it as an always active neuron with weight: -Theta
+
+---------------------------------------------
+
+## FEED FORWARD
+
+![1567587479510](/home/rambo/.config/Typora/typora-user-images/1567587479510.png)
+
+=> each output is the transformation of the sum of all the weight * neurons coming to that neuron
+
+-N x M : N input neurons, M output neurons
+=> (N * M)\ W + M\theta parameters
+		
+
+-------------------------------
+## TRAINING
+
+-error function: 
+
+![1567586980054](/home/rambo/.config/Typora/typora-user-images/1567586980054.png)	
+
+=> find the weight that minimize the error
+
+-gradient descent: 
+	-gradient: vector conteining all the partial derivative of the function in respect to the variables
+
+![1567588037439](/home/rambo/.config/Typora/typora-user-images/1567588037439.png)
+
+
+
+![1567588071658](/home/rambo/.config/Typora/typora-user-images/1567588071658.png)
+
+​	-steepest descent: ![1567587089085](/home/rambo/.config/Typora/typora-user-images/1567587089085.png)
+
+--------------------------------------------------------------
+
+### LINEAR SEPARABILITY
+
+Preceptor can only solve linearly separable problem.
+
+=> **We need to add layer outside the  input and output one**
+
+​	-The hidden layer remap the original point making them linearly separable.  
+
+​	-It is hard to calculate the gradient of hidden layer because we don't know the desired output.
+
+## BACK PROPAGATION
+
+It is an optimization procedure of the parameters.
+
+We calculate the gradient in respect to the error and the output layer than back-propagate to the hidden layer.
+
+![1567593510546](/home/rambo/.config/Typora/typora-user-images/1567593510546.png)
+
+![1567672875050](/home/rambo/.config/Typora/typora-user-images/1567672875050.png)
+
+We can add a term depending on the previous weight update to speed up the reaching of the minimum.
+
+![1567593650482](/home/rambo/.config/Typora/typora-user-images/1567593650482.png)
+
+## OVER-FITTING
+
+-The number of parameters should be far lower (1\10) than the number of point to learn.
+
+-Apply Regularizers:
+
+![1567674171786](/home/rambo/.config/Typora/typora-user-images/1567674171786.png)
+
+In this case adding the sum of the weight to the error we try to keep all the weight low.
+
+-Stop the training early so it don't learn the **'noise'** in the training set:
+
+​	Use a third set to determinate when to stop and than use the second to check for over fitting. 
+
+
+
+### SOLUTION
+
+Divide the training set in three parts and use one for training and one for benchmark. 
+
+​	-**validation**: we test for overfitting and to decide hyperparameters
+
+​	-**training**: we train the network on it
+
+​	-**test**: give the final results
+

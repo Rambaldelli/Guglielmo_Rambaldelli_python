@@ -1,0 +1,11 @@
+PDBe FOLD (secondary structure elements)
+
+RAPRESENTATION
+Graph of vectors and the angles between them rapresenting a-elix and b-strand
+
+MATCHING
+align the labels of the secondary structure  uscìing a graph mtching algorithm
+
+PROBLEM
+-lost connectivity(es loops)
+-no atom distance

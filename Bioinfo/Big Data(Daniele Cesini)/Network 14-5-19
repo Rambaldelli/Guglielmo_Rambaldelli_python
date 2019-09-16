@@ -1,0 +1,27 @@
+LEVELS
+2: MAC address
+3: IP
+
+PUE (power usage effectivnes)= tot energy\ IT equip. energy
+
+NETWORK
+-HUB: connect LAN => BROADCAST
+-SWITCH: knows MAC address => knows to wich port to send
+-ROUTER: connect two different network
+
+TOP OF THE RACK SWITCH
+-connect all the machine inside a rack
+-multiple one connected to the AGGREGATION SWITCH
+
+HYPRCONVERGENCE ARCHITETTURE
+-distributrd: parralel blocks
+-convergent: all converge on switchs
+
+NEEDS----------------------------
+-provvision
+-monitoring
+-allarming
+-power
+-cooling
+
+

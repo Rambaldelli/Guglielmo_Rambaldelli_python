@@ -1,0 +1,43 @@
+SUFFIX TRIES
+-tree
+-every edge is a letter
+-every sequence end in $
+-sequence sharing prefix share the breanch untill they diverge
+-a node rappresent a prefix of a sufix
+
+SUFFIX LINKS
+connect a X+sting to the same string without X (one character)
+
+CREATE (scan sequence adding every time one mor character at the end of it)
+-add to deepest 
+
+-follow link of father 
+-add as son
+-repeat
+
+PROBLEMS
+-longest common substring
+
+SUFFIX TREE--------------------------------------------------------
+compress path without choice in a singl edge => use tuple of index for start and end of the substring rappresented.
+
+UKKONEN ALG.: costruct suffix tree in O(n)
+	-look for answer O(m) (lenght of the query)
+
+SUFIX ARRAY-----------------------------------------------------------
+2 array:
+	-sorted prefix
+	-index of the sorted prefix (each prefix keep the index it had before sorting)
+
+BUILD:
+-build a tree and do an inorder visit saving the index and we have a sufix array.
+-Kärkkäinen & Sanders algo O(n).
+	-crate array with prefix starting in position not multiple of 3 + sort
+	-crate array with prefix starting in position multiple of 3 + radix sort
+	-merge with skewed 1\3,2\3 split  
+
+EXIST ALSO IMPROVED VERSION MADE OF 5 AND NOT 2 ARRAY
+
+K-MER COUNTING PROBLEM:
+Given a lenght print all the substring of that lenght and how many times it appear.
+

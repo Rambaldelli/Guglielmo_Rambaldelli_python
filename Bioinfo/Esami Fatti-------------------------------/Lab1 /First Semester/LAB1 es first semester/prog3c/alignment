@@ -1,0 +1,111 @@
+
+# bin/ggsearch36 -E 10.0 -f -12 -g -2 -s data/blosum62.mat 15650.1.seq 15650.2.seq
+GGSEARCH performs a global/global database searches
+ version 36.3.5e Nov, 2012(preload8)
+Parameters not available for: data/blosum62.mat: -12/-2
+Query: 15650.1.seq
+  1>>>tem 687 bp - 687 aa
+Library: 15650.2.seq
+      721 residues in     1 sequences
+
+Statistics: (shuffled [500]) Unscaled normal statistics: mu= -352.6520  var=737.4298 Ztrim: 0
+ statistics sampled from 1 (1) to 500 sequences
+Algorithm: Global/Global affine Needleman-Wunsch (SSE2, Michael Farrar 2010) (6.0 April 2007)
+Parameters: data/blosum62.mat matrix (11:-4), open/ext: -12/-2
+ Scan time:  0.070
+
+The best scores are:                                      n-w bits E(1)
+tar 721 bp                                         ( 721) -317 22.2   0.095
+
+>>tar 721 bp                                              (721 aa)
+ n-w opt: -317  Z-score: 63.1  bits: 22.2 E(1): 0.095
+global/global (N-W) score: -317; 15.3% identity (43.9% similar) in 758 aa overlap (1-687:1-721)
+
+                10        20        30        40        50         
+tem    M-AEELVLERCDLELETNGRDHHTADLCREKLVVRRGQPFWLTLHFEGRNYQASVDSLTF
+       : :...:... : ....   :..: :     : : :   : :::    ..  .. :.  .
+tar    MVARKFVVRHEDSSFDV---DYNTED----GLEVLRFLIFSLTLVPPEEQKIVAEDDNRL
+               10           20            30        40        50   
+
+      60        70        80        90       100       110         
+tem    SVVTGPAPSQEAGTKARFPLRDAVEEGDWTATVVDQQDCTLSLQLTTPANAPIGLYRLSL
+           .   : .   .     .:.::..:      :..   :. .: .  .: .    .. 
+tar    VSDESDLASLSERLRLVSVGEDSVENSDAEMLKSDEE---LARMLQAEEDAIMFQQFVAA
+            60        70        80        90          100       110
+
+     120       130       140                             150       
+tem    EASTGYQGSSFVLGHFILLFNAWCPADAV----------------------YLDSEEERQ
+       . .  ..:        .:...     ::.                      .  :.:::.
+tar    RDNGEFEGRIRPYVSQVLMYEDPVRQDAARKTVPKDELEEKALVSLAKEGNFEPSKEERD
+              120       130       140       150       160       170
+
+       160       170       180             190           200       
+tem    EYVLTQQGFIYQGSAKFIKNIPWNF------GQFQDGILDICLIL----LDVNPKFLKNA
+          : :  : .. : ..... : .:      :: . . :   :      ...    .  .
+tar    YAFLLQLLFWFKKSFRWVNEPPCDFCGNKTIGQGMGNPLTSELAYGANRVEIYRCTMCPT
+              180       190       200       210       220       230
+
+       210       220           230               240       250     
+tem    GRDCSRRSSPVYVGRVGSGM----VNC--------NDDQGVLLGRWDNNYGDGVSPM--S
+            : ..:. . .. .:     .::        . :. ...   :. . .  :     
+tar    TTRFPRYNDPLKLVETKKGRCGEWANCFTLYCRTFGYDSRLIMDFTDHVWTECYSHSLKR
+              240       250       260       270       280       290
+
+                 260       270       280       290            300  
+tem    WI------GSVDILRRWKNHGCQRVKYGQCWVFAAVACTVLRCLG-----IPTRVVTNYN
+       ::      :  :    ...   ....:  .    .:. .. :        .  :..:. .
+tar    WIHLDPCEGVYDKPMLYEKGWNKKLNYVIAISKDGVCDVTKRYTKKWHEVLSRRTLTTES
+              300       310       320       330       340       350
+
+            310       320               330       340       350    
+tem    SAHDQNSNLLIEYFRNEFGEI--------QGDKSEMIWNFHCWVESWMTRPDLQPGYEGW
+       : .:   .:  :  :. . :         .....:.  :.:   .. .. :  : : . :
+tar    SLQDGLRTLTRERRRSLMFESLSKLELRDRNEQEELERNLHSADNASVSLPGRQSGDREW
+              360       370       380       390       400       410
+
+          360       370       380       390        400       410   
+tem    QALDPTPQEKSEGTYCCGPVPVRAIKEGDLSTKYDAPF-VFAEVNADVVDWIQQDDGSVH
+       . .     . ....   .  :::   .  ... ::. . ....   : .   . ..  : 
+tar    RIMRSEFGSDENSSVSSSSCPVRKCVDDHVTNIYDSFLPILTQFVEDGLPVARTNE--VL
+              420       430       440       450       460          
+
+           420       430       440       450       460       470   
+tem    KSINRSLIVGLKISTKSVGRDEREDITHTYKYPEGSSEEREAFTRANHLNKLAEKEETGM
+       : :.. :.   .   :.       :  .. ..::        .  :  :.  .:.. .: 
+tar    KMIKQVLVDLKNAPYKTRKARLTLDSDNSSSFPEQFLPALGDLLLA--LSLKSERDTNGK
+      470       480       490       500       510         520      
+
+           480       490       500       510       520       530   
+tem    AMRIRVGQSMNMGSDFDVFAHITNNTAEEYVCRLLLCARTVSYNGILGPECGTKYLLNLT
+       .. : :  ...  .   .   .. .. .: :. :    .... ...  :    . . . .
+tar    SVTISVDGKLTKTA---IALPVALDALRELVADLSKY-QNLNKDSLSFPLVKQNRVCSGS
+        530       540          550       560        570       580  
+
+           540       550       560       570       580        590  
+tem    LEPFSEKSVPLCILYEKYRDCLTESNLIKVRALLVEPVINSYLLAERDLYLENPE-IKIR
+       .   .:. .:  :    . : . ::.  . ..       ..  .. . :: .  . :  .
+tar    VLASGEE-LPSGIATAAF-DGIQESKWEEPNGA------KGCWIVYKTLYNQMHQLIAYE
+             590        600       610             620       630    
+
+            600       610       620       630          640         
+tem    ILGEPKQKRKLVAEVSLQNPLPVALEGCTFTVEGAGLTEEQ---KTVEIPDPVEAGEEVK
+       ...     ..   .  :..    .   :..  . . . ::.   :. .:  :   ..  .
+tar    LMSANDAPERDPKDWILEGSNDGGSTWCVLDKQTSQVFEERFQRKSYKITTPGFQANLFR
+          640       650       660       670       680       690    
+
+     650       660       670       680       
+tem    VRMDLVPLHMGLHKLVVNFESDKLKAVKGFRNVIIGPA
+        :.           : :.  ..  .   :  ..  .  
+tar    FRF-----------LSVRDVNSTSRLQLGSIDLYRSHQ
+                     700       710       720 
+
+
+
+687 residues in 1 query   sequences
+721 residues in 1 library sequences
+ Tcomplib [36.3.5e Nov, 2012(preload8)] (4 proc in memory [0G])
+ start: Sat Jan 26 14:49:11 2019 done: Sat Jan 26 14:49:11 2019
+ Total Scan time:  0.070 Total Display time:  0.010
+
+Function used was GGSEARCH [36.3.5e Nov, 2012(preload8)]
+

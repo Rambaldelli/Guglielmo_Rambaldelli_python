@@ -1,0 +1,25 @@
+GREEDY ALG.
+One choice at a time, just do the most promising choice every time without backtrakking.
+MUST prove optimal substructure and greedy property.
+
+
+EXEMPLE: MINIMUM SPANNING TREE-------------------------------------------
+Connect N elements with some connection restrain using the least ammount of wires.
+N.B.: NO CICLES
+(es.: ultrametric evolutionary tree, electric cirquit)
+
+RAPPRESENTATION: weighted undirected connected graph
+FRAGMENT: sub spanning tree of a tree
+SAFE EDGE: minimum edge that leave a fragment creating a bigger fragment
+
+METHOD
+-chose a fragment and go for the safe edge
+-if to fragment connect they became the same
+
+KRUSKAL ALG [O(m logN)].
+-array A of m edges ordered by least weight: each recorded as: u,v,weight
+-store fragments as MFset
+-store spanning tree as set T
+
+
+

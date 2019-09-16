@@ -1,7 +1,0 @@
-DNA: eteropolymer of two complementary chain of desossiribonucleic acid(nucleotides) link by phospodiester bond.
---simply staying in water(polar solvent) the strand of DNA tend to forma duble elix.
---always dinamically changing.
-CROMATINE: active DNA plus protein 'working' on it.
-STABILIZATION:polar solvent(water) stabilize a lot of biological moleculs
-TRASCRIPTION FACTORY:complex that are able to trasript different loci from different chromosomes in the same time.
-MOLECULS:eteromoleculs

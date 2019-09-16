@@ -1,0 +1,97 @@
+# INTRO
+
+To annotate we need a original database that should be analyzed if: 
+	-informative 
+	-reliable
+
+	N.B.: more important if we are in a high troughtput setting.
+
+We need to extract usefull information from the data: have dependent and independent variables.
+
+=> DATA CURATION
+We need manual data curation
+	-seq. curation
+	-seq. analysis
+	-literature curation
+	-family based cur.
+	-evidence atribution
+	-quality check and integration
+
+QUESTIONS
+-data good
+-analitically or machine learning
+
+---------------------------------------
+Only knowing the electron density we can know the theoretical function of the protein
+	-phisic
+	-computational chemistry
+
+
+
+---------------------------------------
+## BIOINFO TOOL:
+
+heuristic: no theoretical foundation but experimental tuning
+
+
+
+## REFERENCE
+
+the longest isoform is the reference
+
+
+
+## GO AND ECO
+
+-GO: classes with relation between them
+	-molecular function
+	-cell component
+	-bio pathway
+
+-ECO code(11): verification type by curator of the GO term.
+
+
+
+## TRANSMEMBRANE REGION
+
+standard lenght is 20 AA but it is not a fixed one so it can lead to automatic predctor error. 
+
+
+
+## PPI STUDY 
+
+-affinity co purification followed with mass spettroscopy
+
+-two hybrid 
+
+
+
+## DATABASES
+
+PFAM(more precise) \ INTERPRO(sum of database) 	:	 family annotation
+	-in case of discrepancies use a majority rule or manually check
+
+INTACT \ STRING(different kind of PPI evidences) \ BIOGRID	 :	 PP interaction
+
+SCOP \ CATH(hmm on **prot evolution**)	:	 protein structure
+
+UNIPROT
+	HUMSAVAR
+
+​		-human polymorfism and diseses database
+
+​	SIMILAR
+
+​		-list of swissprot prot classified by family
+
+
+
+## BUILD A TOOL
+
+download from uniprot secure prot and use them to train the predictor.
+	
+
+
+
+
+

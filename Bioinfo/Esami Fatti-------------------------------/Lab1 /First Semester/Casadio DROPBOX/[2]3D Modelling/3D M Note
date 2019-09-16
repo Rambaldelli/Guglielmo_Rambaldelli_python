@@ -1,0 +1,25 @@
+FOLDING PROBLEM: 
+-frustrated system: too meany tendencies in the system
+-social entitis
+
+BUILDING(structure from sequence):
+-COMPARISON(good one):[30-100%]:
+-THREADING:[0-30%]:try some structure and them see wich one fit the sequence
+-AB INITIO:[new sequence]:
+
+
+COMPARATIVE MODELLING(program to use):
+-target
+-alignment on template (modeller)
+-evaluation of model(procheck): if not check alignment and retry
+PROTOCOL:
+-blast sequence(with REFERENCE DATABASE[structure])
+-find PDB reference to write report
+-align to reference
+-model with modeller
+
+GOAL
+-predict prot. 
+-predict active prot.
+-stable protein
+

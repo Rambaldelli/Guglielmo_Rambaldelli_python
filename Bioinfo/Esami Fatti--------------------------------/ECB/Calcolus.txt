@@ -1,5 +1,0 @@
--study of function
---derivate
---integrals (non complessi)
---MAX MIN
--taylor series

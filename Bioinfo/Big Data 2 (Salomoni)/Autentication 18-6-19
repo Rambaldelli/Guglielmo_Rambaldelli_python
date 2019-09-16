@@ -1,0 +1,39 @@
+http vs https: S data transfered are encripted
+
+-------------------------------------------------------
+IDENTITY MANAGER MODELS
+	-OSI: failed one
+	-TCP\IP
+		-LDAP protocol: 
+			-key-value pairs
+			-is an ATTRIBUTE AUTHORITY
+		-RADIUS
+		-KERBEROS
+			-strong autentication (encripted ticket)
+				-KDC: trusted intermediary
+				
+
+PUBBLIC KEY CRYPTOGRAPHY7
+	-ENCRIPTION\ DECRYPTION
+	-NONEREPUDIATION: signature
+
+-CERTIFICATE X.509: https
+		-PROTOCOLS ES. TLS \ SSL 
+		-given by CA (certificate authority)
+			-"let's encript": free one
+
+CLOUD-----------------------------------------------------------
+--AUTHENTICATION--
+SAML(es. eduGAIN)
+	-identity provider
+
+--AUTHORIZATION--
+OAuth
+	-need registration
+	-no autentication
+	-garants token: JWT: jeson web token
+	-OIDC: open id connect: autentication part
+
+--GATEWAY--
+INDIGO
+

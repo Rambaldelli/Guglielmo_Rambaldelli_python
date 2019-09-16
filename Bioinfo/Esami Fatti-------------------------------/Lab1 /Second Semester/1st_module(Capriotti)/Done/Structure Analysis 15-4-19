@@ -1,0 +1,12 @@
+MISSING: LOOK FOR LESSON ONLINE
+
+
+ANFINSEN HYPOTESIS:
+The sequence contain all the info to know the 3D structure
+-DOGMA
+	-uniqueness: no other structure with compatible free energy.
+	-stability: stable to chenges in environment.
+	-kinetical accessible: the folding process must have a smooth free energy curve.
+
+DSSP (software)
+take a pdb and compute the secondary structure

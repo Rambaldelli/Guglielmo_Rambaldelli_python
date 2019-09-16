@@ -1,0 +1,15 @@
+HTC (high troughtput computing)
+
+-HPC: speed up one program as much as possible
+-HTC: run a lot of copy of the same program
+
+--GRID--
+-non centralized
+-standard protocols
+-good QoS
+
+TYPE
+-services
+	-supercomputer
+	-cluster
+-volunteer

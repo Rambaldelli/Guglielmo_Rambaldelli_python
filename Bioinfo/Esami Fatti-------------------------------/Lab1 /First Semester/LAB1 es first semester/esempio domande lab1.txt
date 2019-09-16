@@ -1,0 +1,91 @@
+modeller steps
+statistical tests to validate what is true(student, gaussian, puasson.... )
+several words about BLAST alg
+
+1) your definition of bioinformatics
+	science of problem solving aplied to the big data of biology
+
+2) technological advancements that allowed biology to become Big Science. Critical consequences.
+	high troughtput sequencing, need of informatics system to manage the data and faster more imprecise algorithm
+
+3) open problems of the post genomic era
+	-data production overpass storage and computational power
+	-Genome assembly (de novo assembly
+	-Genome annotation
+	-Finding the alternative splicing variants
+	-Variations in proteins
+	-Protein structural and functional annotation
+	-Annotating the different SNPs
+	-chromatin dinamics 
+	-cel symulation
+
+4) how to cope with cell complexity. List molecules that can be detected by sequencing in a cell wide mode. -----------------------
+
+	--functional genomics(merge data)
+	Cellular component
+	Biological process
+	Molecular function
+
+
+5) given a sequence of symbols, what is the meaning of annotation.
+	it gives explains how they works and what thay do
+
+6) methods for protein annotation
+	ab initio
+	threading
+	homology 
+	
+7) most important database and its role in annotation
+	ensamble: gene
+	uniprot :annotation 
+	pdb: 3d
+	pfam: family characterization
+
+8) why we distinguish the problem of structural annotation from sequence annotation
+	sequence: genomics or trascription\maturation
+	structure: chemical\fisiological function
+	
+9) protein sequence, structure and function. Reference database and statistical analysis
+	seq: uniprot -- blast
+	structure: pdb  --- modeller
+	function : uniprot, pfam  --- 3d visualizer (rasmol chimera)
+
+10) rules for sequence comparison-------------------------------------------------------------
+	
+
+11) local and global alignment algorithms
+	local try to maximixe the aligned zone(with or without gaps) needleman wunsch
+	global maximize the alignment score even interrupting it and leaving end gaps	smith waterman
+
+12) database search. Logic of the algorithm
+	basic one is to divide the query in 'words' and check for them 
+
+13) extreme value statistics: principal most relevant outcomes
+	substitution matrix: the P-value is distribuitrd as a extreme value and allignment too
+
+14) protein universe and uniportKB
+	it is the central hub for protein knowledge with all the main characteristics and links for other, more specific, protein database
+	
+15) evolution did it (I don’t remember how this question goes on.. there are at least other 2 questions missing next to this one! If you remember which ones they were, please write them)
+	to say that sequence identity implies structural idenity we need 30% ID and at least 250 residues
+
+16) flow chart of modeller
+	-blast
+	-search tremplate
+	-search lecterature+
+	-model
+	-stability (ramachandra )
+	-compare (active site ecc)
+	
+17) statistical validation of building by homology
+	using ramachandra plot and diedral angle	
+	
+18) experiments/theory for data driven biology ------------------------------------------------------------------------
+	
+	
+19) why epigenomics will take over
+	-it highly impact all the biological fiel: both proteomics and genomics cant be fully understand in not taken into account
+	-bottom up aproac
+
+20) when a protein is a protein?
+when it has enought heterogenity and a secondary structure stable enoght to wistand polar solvent and perturbation

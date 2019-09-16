@@ -1,0 +1,16 @@
+-time
+	-upper bound
+	-lower bound (matematical prof)
+
+-NP hardness
+	-polinomial -> 2-satisfiability(ex.) 
+	-absolute aprox. -> TPS(ex.)
+	-branch and bound -> TPS(ex.)
+	-heuristics(greedy,local search) -> TPS(ex.)
+
+-data structure: speed up main operation
+
+-design technique
+	-divide and conquer: balanced subproblems
+	-dynamic programming: optimal substructure
+	-greedy: optimal substruct. + greedy choice

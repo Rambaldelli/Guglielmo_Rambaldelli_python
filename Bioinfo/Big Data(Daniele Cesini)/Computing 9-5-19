@@ -1,0 +1,12 @@
+COMPUTING FARM
+-BATCH: controll unattended background program: CONCURRENCY
+	-non interactive job
+	-organized in priority queue
+		-scheduling policies: fair share
+
+MAP REDUCE (like hadoop)
+-take data from different sources
+-map them
+-scuffle
+-reduce
+-output

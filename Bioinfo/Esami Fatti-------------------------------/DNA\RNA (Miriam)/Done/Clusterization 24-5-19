@@ -1,0 +1,35 @@
+-clusterize genes based on sample
+-clusterize sample based on genes
+
+--NORMALIZED (few outliers)--
+PEARSON R (correlation coefficent)
+-0= perfect correlation
+-1= totally uncorrelated
+
+--NOT NORMALIZED (robust to outliers)--
+SPEARMAN CORRELATION
+Same as pearson but using ranks
+
+EUCLIDIAN DISTANCE
+
+-------------HIERARCHICAL CLUSTERING (DENDROGRAM)--------------------
+Cluster two genes each time computing the distance, than calculate the distance between the clusterand the next.
+-minimum
+-maximum
+-avarage
+
+N.B.: there are many variant and we must try some of them and statistically validate it.
+
+HEAT MAP
+Usually genes X samples:
+we cluster the genes based on the different expression levels(compared to reference) in the varous sample(usually controlls and tests)
+
+-----------K-Means-------------------------------------------
+	-no hierarchy
+	-no deterministic
+
+-Chose two centroid and use it a the 'center' of the cluster
+-Assig data to nearest centroid
+-Recalculate the centroid every time you add data as a mean of the cluster
+
+

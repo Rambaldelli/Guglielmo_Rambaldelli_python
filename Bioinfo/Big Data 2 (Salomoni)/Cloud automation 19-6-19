@@ -1,0 +1,35 @@
+MONOLITH: multiple apllicationin one program
+MICROSERVICES: divide functionally different parts
+	
+DevOps("release early, release often"):
+	-CONTINUOUS INTEGRATION(es. jenkins)
+		-keep merging
+		-automatic testing
+		-quality test
+			-sloccount
+			-pylint
+			-pytest \ nose
+	-CONTINUOUS DELIVERY
+		-as soon as code chenges automatically build and get pakaged
+	-CONTINUOUS DEPLOYMENT
+		-also automatic deployment to public 
+	
+
+PROGRAM
+-docker(swarm)
+	-master and slave share work based on load
+-kubernetes
+	-master manage the slaves
+	-min 3 nodes
+	-object
+		-volume
+		-namespace (virtual cluster)
+		-deployment (manage and controll node)
+		-pod (process (same as docker compose))
+		-service (collection of pods)
+-mesos (!!!divide one/more physical machine in a lot of VM!!!)[fine grained sharing]
+	-
+
+ES------------------------------------------------
+-swarm of containers
+-load manager

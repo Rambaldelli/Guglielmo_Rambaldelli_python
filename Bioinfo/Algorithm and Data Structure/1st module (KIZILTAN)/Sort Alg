@@ -69,7 +69,7 @@ ANALYSIS
 Running time: O(nlogn) 
 
 
-QUICKSORT(div. and conq,)---------------------------------------------
+QUICKSORT(div. and conq,) [really good over 5000 elements]---------------------------------------------
 Keep dividing in two array in in wich the elements are divided in max half and min half by the middle element A[q]
 
 QUICKSORT(A, p, r)               #tail recursion 
@@ -151,9 +151,25 @@ RADIX SORT-------------------------------------------------------------
 sort one column at time
 
 RADIX-SORT(A, d)
-for i← 1to d
+for i← 1 to d
 	do use a stable sort to sort array A on digit i
 
 ANALYSIS
 Runnin Time: Θ(d(n+k)) 
+
+
+SHELL SORT(just the pross of insertio sort) [really good under 5000 elements O(n^1.5)]------------------------------------------------------------------
+Is an insertion sort but:
+	- instead od decreasing by 1 each time you use H= 3*h+1 until smaller than N
+	-H= H\3 when lowering it until H=1
+
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,68 @@
+SIMILARITY: score of the best alignment between to seq.
+DISTANCE: effort needed to trasform one string into another.
+	-substitution
+	-insertion
+	-deletion
+
+EDIT DISTANCE
+	-0 if match
+	-1 anything else
+
+THEOREM(distance can be computed given the similarity (and vice versa)). 
+Given a costmeasure (c, h) and a constantM, one can define a scoringsystem (p, g) for global comparison as follows:
+p(a, b) = M – c(a, b)  
+g = – h + M/2  
+Then 
+sim(S, T) + dist(S, T) = (m + n)M/2
+
+SHORTEST GLOBAL SUPERSTRING (NPhard)
+	-Construct a weighted directed overlap multigraph OM(F, E) as follows:
+		-each node corresponds to a string in F 
+		-there is a directed edge e = (f, g) withweight t whenever the last t characters of the string f are equal to the first t characters of the string g
+	-the heaviest hamiltonian (each node just once) path is the SGS
+
+
+---------------------------------------------------------------------------------------
+GLOBAL ALIGNMENT
+-INITIALIZATION
+A[0, j] = – 2j  (because there are j initial spaces in T) 
+A[i, 0] = – 2i  (because there are i initial spaces in S)
+-FILLING
+A[i, j]  =  max{A[i, j – 1] – 2,  A[i – 1, j] – 2, A[i – 1, j – 1] + p[i,  j]) } 
+i = 1, ..., m, 
+j = 1, ..., n 
+
+LOCAL ALIGNMENT
+-INITIALIZATION
+A[0, j] = A[i, 0] = 0  (initialspaces in S or in T are notcharged) 
+-FILLING
+A[i, j]  =  max{A[i, j– 1] – 2,  A[i – 1, j] – 2, A[i – 1, j– 1] + p[i,  j]), 0 }
+i = 1, ..., m, 
+j = 1, ..., n
+
+SEMIGLOBAL ALIGNMENT (like global but ignore start and\or end gap)
+	-GAP COMPUTATION PENALTY (IF NOT COMPUTATED DO:)
+		Beginning of first sequence	Initializerow zero with zeros
+		End of first sequence		Look for maximum in last row
+		Beginning of secondsequence	Initializecolumn zero with zeros
+		End of secondsequence		Look for maximum in last column
+
+MULTIPLE ALIGNMENT-------------------------------------------------------------------------------
+-The score is the sum of all the pairwise scoring between the elements.
+SP-score(I, –, I, V)   = score(I, –) + score(I, I) + score(I, V) + score(–, I) +  score(–, V) + score(I, V)  =   – 2+1–1–2–2–1  =  – 7 
+Note: score(–, –) = 0
+
+-CENTER STAR HEURISTICS
+	-select a center sequence: sequence for witch the sum of all pairwise alignment is lower.
+	-align all with "center"
+	-unite the results => already globally aligned.
+
+
+CONSENSUS------------------------------------------------------------------------------------
+If the majority of sequence have the same AA we can suppose that the one with a different one are error.
+
+
+
+
+
+

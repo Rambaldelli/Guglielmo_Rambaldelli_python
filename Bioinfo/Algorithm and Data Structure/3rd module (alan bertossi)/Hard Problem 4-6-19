@@ -1,0 +1,53 @@
+CLIQUE:graph in which every node isconnected to every other.
+
+Easy to check if a solution is a solution(POLINOMIAL TIME) but hard to find one(EXPONENTIAL).
+
+ES: 
+-color node of graph with K different colors in a way that two connected node nevere have the same color.
+	-optimization: minimum K
+	-decision: how to color the graph
+-go trought each node of a graph just one with a max 'distance' travelled of K.
+-Given an m×n integer matrix A and a vector b of m integers, is there a vector x of n elements 0/1 such that Ax≤b?
+-Given a boolean formula (in conjunctivenormalform), isthere an assignmentof the true/false values to the booleanvariableswhichmake the formula true?
+-A polynomial certificate is an algorithm which, given a supposed solution to a decision problem, checks in polynomial time whether such a solution is indeed a solution to the problem giving a YES answer
+-----------------------------------------------------------------------
+PROBLEM CLASS:
+P: solvable in polinomial time
+NP: certificable in polinomial time
+
+NP HARD STRATEGY
+-SPECIAL CASE
+	-ADD CONDTION
+	-ES:
+		-satisfiability:each clause max 2 litterals
+		-graph color: max two colors
+		-clique:bipartite graph
+		-linear: just real number
+-APROXIMATION	
+	-ACCEPT NEAR OPTIMAL SOLUTION
+	-the cost of the solution is e(constant) away from the optimal 		-ES: 
+		-TPS: traveling sales person problem
+			Every hamiltonian path is a spanning tree.
+			So the min spanning tree cost <= than TPS path
+			If triangle inequality hold => solution at max 				double the cost of optimal
+
+-BRANCH AND BOUND
+	-PRUNE SOME WAY
+	-BRANCH: rule to generate children of a node
+	-BOUND: how to derive the lower bound of the cost
+	-after we found a salution each time the cost of other banches goes over it we ignore that path.
+
+
+-HEURISTICS
+	-NO DIMOSTRATION	
+	-TYPE:
+		-greedy
+		-local search
+			-remove two and three noncontinue edge and replace them with lower cost 
+			-do the process multiple time starting from multiple random starting position
+
+
+ES: TPS: traveling sales person problem
+Every hamiltonian path is a spanning tree.
+So the min spanning tree cost <= than TPS path
+If triangle inequality hold => solution at max double the cost of optimal

@@ -1,0 +1,12 @@
+MODEL
+	-iaas
+	-paas
+	-saas
+DEPLOYMENT
+	-private
+	-community
+	-public
+	-hybrid
+ISOLATION
+	-dedicated
+	-multy tenant

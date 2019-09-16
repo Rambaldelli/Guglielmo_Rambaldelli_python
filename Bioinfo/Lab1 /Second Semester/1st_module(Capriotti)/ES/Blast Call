@@ -1,9 +1,0 @@
-
-
-
-
-
-
-
-
-blastpgp -i input -d reference_database -o output -e e_value_filter -m format

@@ -1,0 +1,29 @@
+GENE TYPE
+homologous: share ancestry
+	ortologs: divided by speciation
+	paralogous: divided by gene duplication => bonus gene for free evolution
+analogs: same function no ancestry
+
+WARINING PARALOGOUS GENES
+-paralogous gene can be confused as ortologs and we can end up using two genes that are not under the same type of pressure.
+	-mitocondrial DNA have no paralogous genes
+-TOPOLOGY: given that we have two one can degrade and became a pseudogene that can give problem durin analysis because we can lose different copy in different organism
+
+ES ALLOPATRIC SPECIATION
+speciation based esternal cause effect genes but it can happen in different way sand can lead to errors (N.B.: species tree vs ! gene tree !)
+
+COALESCENCE THEORY [POPULATION genetics] (merging of lineages going back in time)
+-neutral evolution
+-infinitenshites
+-panmictic pop.
+-costant pop. sixe
+-non overapping gen
+
+p(species tree)= (2\3)*e^-t\2N => increase coalescent time decrease probability to find wrong tree
+
+
+
+CHARACTERs FOE ANALYSIS
+-must be homologous \ ortologous (ortologous genes and/or sites)
+-compare ortologous sites for wich we can have different states (every single nucleotide position) 
+

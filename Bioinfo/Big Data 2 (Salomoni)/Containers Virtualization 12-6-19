@@ -1,0 +1,30 @@
+one machine for each system => one machine for multiple virtual system
+
+SYSTEM virtualized structure 
+-host system
+-guest system  										docker
+having multiple equals guest system can be avoided using only one docker.
+-virtual machine									containers(lightweight virtual machine)
+
+METHOD
+-host machine
+-install docker
+-install container
+
+N.B.: remember to delete images and container not used or stoped
+
+DOCKERFILE: file that docker use as configuration when building the container
+
+NOTE
+-can map a local directory to a container
+-keep docker and containers update!!
+
+UDOCKER
+docker software to run container without privilegs
+
+ES.: 
+DOCKER COMPOSE
+create 2 container, one expose a website the other contain the data of it(hidden)
+-YML file: configure docker compose
+-can attach docker container to it 
+-work only on one machine

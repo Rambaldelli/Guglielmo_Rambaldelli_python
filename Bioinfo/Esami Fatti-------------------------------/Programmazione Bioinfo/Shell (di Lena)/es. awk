@@ -1,0 +1,36 @@
+cat uniprot_sprot.fasta | awk  'NR==1{print $0 > "out.txt"} NR!=1{if($0~/^>/) {print "\n"$0 > "out.txt"} else {printf $0 > "out.txt"}}'
+cat out.txt | awk -F '|' 'NR==7{if($1==">sp"){print $0;getline;print $0} else {getline;print $0;getline;print $0}}'
+cat out.txt | awk  'BEGIN{RS=">"} NR==6{print ">"$0}'
+cat uniprot_sprot.fasta | awk  'BEGIN{RS=">"} {print ">"$0 > "out"NR".txt"}'
+cat SRR5109807_1.fastq | awk 'BEGIN{RS="@"} END{print NR}'
+cat SRR5109807_1.fastq |awk '{sub(/^@,">"/)print $0;getline;print $0;getline;getline}'
+
+cat goa_human.gaf | sed -n '/!/p'|wc -l
+cat goa_human.gaf | sed  '/!/d' 
+cat goa_humanP.gaf | sed -n -e'1p' -e '$p'
+cat uniprot_sprot.fasta |sed -n '/^>/p' |wc -l 
+cat uniprot_sprot.fasta | sed -n '/Q9Y6Y0/p'
+
+cat spazi.txt | sed  's/[[:space:]]//g' | sed '/^$/d'
+cat protein_action_unique.txt | sed 's\9606.\\pg'
+cat SRR5109807_1.fastq |sed -n '1~4p' |wc -l
+cat SRR5109807_1.fastq |sed -n -e 's\@\>\pg' -e '2~4p'
+cat sequence.txt |rev | sed 's\A\k\ ; s\T\A\ ; s\k\T\; s\G\t\; s\C\G\; s\t\C\'
+
+
+cat SRR5109807_1.fastq | sed '2~4s\A\k\g ; 2~4s\T\A\g ; 2~4s\k\T\g; 2~4s\G\t\g; 2~4s\C\G\g; 2~4s\t\C\g' |s
+
+
+
+#!/bin/bash
+echo 'mean of all numbers:'
+cat $1 | awk 'BEGIN{b=0;d=0}  {a=a+$0;c[NR]=$0}  END{b=a/NR; for(i = 1; i <=NR; i++) d=d+(c{i}-b)**(c{i}-b) ; print sqrt(d/NR-1)} '
+
+
+
+
+
+
+
+
+

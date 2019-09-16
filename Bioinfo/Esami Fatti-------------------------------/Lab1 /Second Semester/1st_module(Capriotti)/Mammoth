@@ -1,0 +1,15 @@
+MAMMOTH
+-vector between CAlpha (3.5 A)
+-move the origin of every vector in the same place 
+=> obtain circle radius 1 of all the CAlpha vector (UNIT VECTOR RAPPRESENTATION)
+-take group of atom (usually 6) build unit vector and calculate URMS(unit root mean square distance) 
+-minimaze URMS
+-compare URMS to a random RMSD to see if statistically significant
+	10: good (URMS << RMSD)
+	0: bad (RMSD = URMS)
+-dinamic progremming (linear so fast)
+-calculate PSI: percentage of structural identity
+
+
+N.B.: PSI is a function of the sequence lenght
+=> we need to find the significance treshold based on the lenght of the alignment

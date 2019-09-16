@@ -1,0 +1,74 @@
+CLOUD COMPUTING
+Supply information and comunication tech as services(IT IS MORE THAN SIMPLE VIRTUALIZATION).
+PRO
+-configurable
+-fast provisioned
+-dinamic provisioning system (no waste)
+-scalable
+CONS
+-security
+-lock-in
+-isolation failure
+-no deletion
+
+-self service, on demand
+-network based access
+-pooling
+-elastic
+-pay per use
+
+------------------------------TYPE-----------------------------------
+SERVICE MODEL:
+-IaaS: infrastructure (until OS)
+-PaaS: platform (until runtime)
+-SaaS: software (just software is provided)
+
+DEPLOY MODEL
+-PRIVATE: avable just for a group
+-PUBLIC: everybody can have an account
+-HYBRID: mix 
+
+ISOLATION MODEL
+-DEDICATED: dedicated only to specific activities
+-MULTI TENANT: con be used for different purposes
+
+--------------------------USE CASE---------------------------
+-end user -> cloud
+-enterprise -> cloud -> end user
+-enterprise -> cloud
+-enterprise -> cloud -> enterprise
+
+
+-production migration
+-traffic bursting
+-backup
+-web osting
+-testing
+-big data manipulation
+
+----------------------APPLICATION-----------------------------
+-STATELESS: do not store info           => BEST ON CLOUD
+-STATEFUL: provide responses on tha base of previous state
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

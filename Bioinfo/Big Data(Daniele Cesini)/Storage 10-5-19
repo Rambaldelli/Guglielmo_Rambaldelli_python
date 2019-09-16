@@ -1,0 +1,25 @@
+RAID: multiple disk in parallel => 
+	-increase transfer rate
+	-renconstruct data trought parity(one disk keep parity)
+
+QoS: quality of service garanted by datacenter
+
+FILE SYSTEM
+-parallel: share block level access
+-distributed: not share block level access
+
+STORAGE(NFS protocol) - can be tiered(made by different storage tecnology)
+-DAS(directly attached storage(to local server))
+	-black level access
+-NAS(network attached storage)
+	-file level access
+-SAN(storage area network)
+	-network of block level access
+	-file system to access at file level
+	-STRUCTURE
+		-storage
+		-san's
+		-servers with parallel system(storage and meta)
+		-client's
+-TAN(tape area network)
+

@@ -1,0 +1,27 @@
+BACKTACKING (allmost always factorial but some time is polynomial)
+-iterative
+	es.:
+	-knuth-morris-pratt exact string matching
+-recursive
+	es.: 
+	-preorder,inorder,postorder visit
+	-depth first search
+
+METHOD(ENUMERATE ALL THE SOLUTION):mhhj
+array S of solution
+add one decision to S and check if it is a solution
+if not return to decision S -1
+
+REDUCE SPACE:
+avoid to add tho the tree of S the node and child of them that we are sure are not possible  
+
+PSEUDOCODE---------------------------------------------------- 
+Enumeration based on forward recursion
+
+C=possible decision 
+subset(S,lenght):
+	for i in tot lenght:
+		S=S+C
+		if i == lenght tot:
+			process solution output
+		subset(S+1)                                

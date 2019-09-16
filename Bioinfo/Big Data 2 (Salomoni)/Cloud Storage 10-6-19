@@ -1,0 +1,48 @@
+TYPE
+-black device
+-database
+-file system
+
+SCALABILITY
+-scale out: add copy of the same thing
+-scale up: incease what you already have
+
+ARCHITETTURE STYLE
+POSIX I/O
+standardize the API and some basic function(es. read write) for file system
+
+REST
+uses http request to object storage
+
+FORMAT------------------------------------------
+JSON:
+lightweight data format
+
+--TYPE--
+-file system
+	-tree
+-object storage
+	-object 
+	-scale out
+-virtual file system
+	-interact with the real storage to give a POSIX interface to the user
+
+N.B.: a lot of cloud are object storage but have gateways that give you the data as file system
+
+OBJECT STORAGRE-----------------------------------------
+-write once
+-read many
+-metadata
+
+--METADATA--
+-fixed
+-editable
+	-fixed key
+		-access controll
+		-content type
+		-content disposition
+		-encoding
+		-language
+		-cache control 
+	-custom
+

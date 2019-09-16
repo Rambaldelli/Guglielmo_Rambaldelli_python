@@ -1,7 +1,0 @@
-PROTEOMICS
--FIGERPRINTING: we look for the spectrum of the various frament generated and confront it to database of peptide fingerprints.
--DE NOVO SEQUENCING: seeing the difference in mass between two sucessive fragment we can calculate the mass(type) of thea added base. 
-
-CHARGE RETAINING NOMENCLATURE(letter + number of residue in the fragment)
--C: x,y,z
--N: a,b,c

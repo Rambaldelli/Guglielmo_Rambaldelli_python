@@ -1,0 +1,54 @@
+PROT-PROT INTERACTION
+-AREA
+	-1200-2000 A: standard
+	-1150-1200 A: weak transient
+	-2000-4600 A: protease
+		      inibitors
+		      G-prot
+-IDROPHOBIC 
+-HOT SPOT
+	-less than 50% of contact area
+	-amminoacid change = at least 2 kkal\mole free energy binding
+	-tyr,trp,arg
+
+PREDICTION-----------------------------------------------------------
+	-Sequence: whole genome but no location
+		-pylogenetic profiling
+		-gene neighboring
+		-gene fusion
+	-Structure: exact loaction but need structure
+
+DOCKING
+	-ENERGY
+	-CONFORMATIO
+	-MODIFICATION WHEN BOUND
+	-ORIENATATION
+
+-PROBLEMS: 
+	-lot of possibility
+	-small energy changes
+	-molecules are flexible
+	
+-TYPE
+	-Bound: on known complex and rigid => model validation
+	-Predictive:
+		-conformation:
+			-Native: as in soloution
+			-Pseudo Native: complexedwith different molecule than docking
+	-rigid
+	-flexible
+	-semi-flexible
+
+-MINIMIZE ENERGY
+	-monte carlo
+	-trial and error
+	-data driven
+
+-SCORING
+	-RMSD = scoring
+
+-CLUSTERING:
+	-event that cluster probabli are not random
+
+
+

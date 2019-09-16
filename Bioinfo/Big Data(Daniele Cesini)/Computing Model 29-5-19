@@ -1,0 +1,35 @@
+SANDBOX (ISB OSB): set of file that travell with the job
+
+DATA DRIVEN VS CPU DRIVEN
+If the resources is chosen based on where the data or the cpu is avaible
+
+COMPUTING MODEL
+WMS (workload managment system): 
+	-select and rank resources 
+	-distribute job
+
+MODEL
+-PUSH(eager)
+	-job bound to a resource
+	-one WMS done the job is sent to that resourec
+
+-PULL \ PILOT(lazy)
+	-WMS retain job in queue
+	-when resource free take job from queue
+
+
+
+PROLOGUE
+-prepare for job
+-dependecy
+EPILOGUE
+-return
+-final check
+
+SUBMISSION
+-WMS
+-direct
+
+PILOT JOB SUBMISSION
+-advantages: bypass the priority set by the site admins
+-disadvantages
